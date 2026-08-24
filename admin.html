@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>SSC 2026 Admin Dashboard — Chattogram Board</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,15 +19,18 @@
               sans: ["Instrument Sans", "ui-sans-serif", "system-ui", "sans-serif"],
               mono: ["JetBrains Mono", "ui-monospace", "monospace"],
             },
+            screens: {
+              xs: "480px",
+            },
           },
         },
       };
     </script>
     <style>
-      /* Custom scrollbar */
+      /* Custom scrollbars */
       ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
+        width: 5px;
+        height: 5px;
       }
       ::-webkit-scrollbar-track {
         background: #f1f5f9;
@@ -39,58 +42,72 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #94a3b8;
       }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
       .tab-active {
         border-bottom: 2px solid #4f46e5;
         color: #4f46e5;
         font-weight: 600;
       }
+      /* Prevent mobile double-tap zoom on buttons */
+      button, a {
+        touch-action: manipulation;
+      }
     </style>
   </head>
-  <body class="bg-[#f8fafc] text-slate-900 font-sans antialiased min-h-screen flex flex-col">
+  <body class="bg-[#f8fafc] text-slate-900 font-sans antialiased min-h-screen flex flex-col pb-16 sm:pb-8">
     <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14 sm:h-16 gap-2">
           <!-- Logo & Title -->
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-100">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex-shrink-0 flex items-center justify-center text-white shadow-md shadow-indigo-100">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
               </svg>
             </div>
-            <div>
-              <div class="flex items-center gap-2">
-                <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">SSC 2026 Admin Panel</h1>
-                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
-                  Local Server
+            <div class="min-w-0">
+              <div class="flex items-center gap-1.5 sm:gap-2">
+                <h1 class="text-sm sm:text-lg font-bold text-slate-900 tracking-tight truncate">SSC 2026 Admin</h1>
+                <span class="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] sm:text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1 animate-pulse"></span>
+                  Local
                 </span>
               </div>
-              <p class="text-xs text-slate-500">Chattogram Board School Importer & Leaderboard Manager</p>
+              <p class="text-[11px] sm:text-xs text-slate-500 truncate hidden xs:block">Chattogram Board Importer & Manager</p>
             </div>
           </div>
 
           <!-- Top Quick Actions -->
-          <div class="flex items-center gap-2 sm:gap-3">
+          <div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
             <button
               id="btnSyncLeaderboard"
               onclick="triggerSync()"
-              class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 text-xs sm:text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 hover:border-slate-400 active:scale-95 transition-all shadow-sm"
+              class="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3.5 sm:py-2 text-xs sm:text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 hover:border-slate-400 active:scale-95 transition-all shadow-xs"
               title="Re-run sync.py to rebuild runtime database and rankings"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
               </svg>
-              <span>Sync Metadata</span>
+              <span class="hidden sm:inline">Sync Metadata</span>
+              <span class="sm:hidden">Sync</span>
             </button>
 
             <a
               href="/"
               target="_blank"
-              class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 text-xs sm:text-sm font-medium text-indigo-600 bg-indigo-50 border border-indigo-200 rounded-lg hover:bg-indigo-100 active:scale-95 transition-all"
+              class="inline-flex items-center gap-1 px-2.5 py-1.5 sm:px-3.5 sm:py-2 text-xs sm:text-sm font-medium text-indigo-600 bg-indigo-50 border border-indigo-200 rounded-lg hover:bg-indigo-100 active:scale-95 transition-all"
+              title="Open Public Leaderboard"
             >
-              <span>View Leaderboard</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <span class="hidden sm:inline">View Leaderboard</span>
+              <span class="sm:hidden">Live</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                 <polyline points="15 3 21 3 21 9" />
                 <line x1="10" y1="14" x2="21" y2="3" />
@@ -102,81 +119,80 @@
     </header>
 
     <!-- Main Container -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full space-y-6">
+    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 flex-1 w-full space-y-4 sm:space-y-6">
       <!-- Stats Overview Cards -->
-      <section class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
-        <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Archive Schools</span>
-          <div class="mt-2 flex items-baseline justify-between">
-            <span id="statTotalArchive" class="text-2xl font-black text-slate-800 tracking-tight">--</span>
-            <span class="text-xs text-slate-400 font-medium">In archive/</span>
+      <section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-4">
+        <div class="bg-white rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs flex flex-col justify-between">
+          <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Archive</span>
+          <div class="mt-1 sm:mt-2 flex items-baseline justify-between">
+            <span id="statTotalArchive" class="text-lg sm:text-2xl font-black text-slate-800 tracking-tight">--</span>
+            <span class="text-[10px] sm:text-xs text-slate-400 font-medium">In archive/</span>
           </div>
         </div>
 
-        <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-          <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">In Runtime</span>
-          <div class="mt-2 flex items-baseline justify-between">
-            <span id="statTotalAdded" class="text-2xl font-black text-emerald-600 tracking-tight">--</span>
-            <span class="text-xs text-emerald-500 font-medium">Active</span>
+        <div class="bg-white rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs flex flex-col justify-between">
+          <span class="text-[11px] sm:text-xs font-semibold text-emerald-600 uppercase tracking-wider">In Runtime</span>
+          <div class="mt-1 sm:mt-2 flex items-baseline justify-between">
+            <span id="statTotalAdded" class="text-lg sm:text-2xl font-black text-emerald-600 tracking-tight">--</span>
+            <span class="text-[10px] sm:text-xs text-emerald-500 font-medium">Active</span>
           </div>
         </div>
 
-        <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-          <span class="text-xs font-semibold text-amber-600 uppercase tracking-wider">Ready to Add</span>
-          <div class="mt-2 flex items-baseline justify-between">
-            <span id="statTotalAvailable" class="text-2xl font-black text-amber-600 tracking-tight">--</span>
-            <span class="text-xs text-amber-500 font-medium">Available</span>
+        <div class="bg-white rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs flex flex-col justify-between">
+          <span class="text-[11px] sm:text-xs font-semibold text-amber-600 uppercase tracking-wider">Ready to Add</span>
+          <div class="mt-1 sm:mt-2 flex items-baseline justify-between">
+            <span id="statTotalAvailable" class="text-lg sm:text-2xl font-black text-amber-600 tracking-tight">--</span>
+            <span class="text-[10px] sm:text-xs text-amber-500 font-medium">Available</span>
           </div>
         </div>
 
-        <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-          <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">Runtime Students</span>
-          <div class="mt-2 flex items-baseline justify-between">
-            <span id="statTotalStudents" class="text-2xl font-black text-indigo-600 tracking-tight">--</span>
-            <span class="text-xs text-indigo-400 font-medium">Records</span>
+        <div class="bg-white rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs flex flex-col justify-between">
+          <span class="text-[11px] sm:text-xs font-semibold text-indigo-600 uppercase tracking-wider">Students</span>
+          <div class="mt-1 sm:mt-2 flex items-baseline justify-between">
+            <span id="statTotalStudents" class="text-lg sm:text-2xl font-black text-indigo-600 tracking-tight">--</span>
+            <span class="text-[10px] sm:text-xs text-indigo-400 font-medium">Records</span>
           </div>
         </div>
 
-        <div class="col-span-2 sm:col-span-1 bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col justify-between">
-          <span class="text-xs font-semibold text-purple-600 uppercase tracking-wider">GPA 5.00 (Runtime)</span>
-          <div class="mt-2 flex items-baseline justify-between">
-            <span id="statTotalGPA5" class="text-2xl font-black text-purple-600 tracking-tight">--</span>
-            <span class="text-xs text-purple-400 font-medium">Top Grade</span>
+        <div class="col-span-2 sm:col-span-1 bg-white rounded-xl p-3 sm:p-4 border border-slate-200 shadow-xs flex flex-col justify-between">
+          <span class="text-[11px] sm:text-xs font-semibold text-purple-600 uppercase tracking-wider">GPA 5.00</span>
+          <div class="mt-1 sm:mt-2 flex items-baseline justify-between">
+            <span id="statTotalGPA5" class="text-lg sm:text-2xl font-black text-purple-600 tracking-tight">--</span>
+            <span class="text-[10px] sm:text-xs text-purple-400 font-medium">Runtime</span>
           </div>
         </div>
       </section>
 
       <!-- Main Tabs Container -->
-      <section class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <section class="bg-white rounded-xl sm:rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
         <!-- Tab Navigation Bar -->
-        <div class="flex items-center justify-between border-b border-slate-200 px-4 sm:px-6 bg-slate-50/70">
-          <div class="flex space-x-6">
+        <div class="flex items-center justify-between border-b border-slate-200 px-3 sm:px-6 bg-slate-50/70">
+          <div class="flex space-x-2 sm:space-x-6 overflow-x-auto no-scrollbar py-1 sm:py-0">
             <button
               id="tabBtnSchools"
               onclick="switchTab('schools')"
-              class="py-4 text-sm font-semibold tab-active flex items-center gap-2 transition-colors"
+              class="py-3 sm:py-4 px-1 text-xs sm:text-sm font-semibold tab-active flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition-colors"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
               </svg>
-              <span>Schools List & Add</span>
-              <span id="badgeAvailableCount" class="ml-1.5 px-2 py-0.5 text-xs rounded-full bg-amber-100 text-amber-800 font-bold">0</span>
+              <span>Schools List</span>
+              <span id="badgeAvailableCount" class="px-1.5 py-0.5 text-[10px] sm:text-xs rounded-full bg-amber-100 text-amber-800 font-bold">0</span>
             </button>
 
             <button
               id="tabBtnBulk"
               onclick="switchTab('bulk')"
-              class="py-4 text-sm font-medium text-slate-500 hover:text-slate-700 flex items-center gap-2 transition-colors"
+              class="py-3 sm:py-4 px-1 text-xs sm:text-sm font-medium text-slate-500 hover:text-slate-700 flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition-colors"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                 <polyline points="14 2 14 8 20 8" />
                 <line x1="16" y1="13" x2="8" y2="13" />
                 <line x1="16" y1="17" x2="8" y2="17" />
-                <polyline points="10 9 9 9 8 9" />
               </svg>
-              <span>Bulk EIIN / Text Paste</span>
+              <span>Bulk / Text Paste</span>
             </button>
           </div>
 
@@ -184,7 +200,7 @@
           <button
             onclick="loadAllData(true)"
             id="btnRefreshData"
-            class="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all"
+            class="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-all shrink-0"
             title="Refresh schools from disk"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -195,9 +211,9 @@
         </div>
 
         <!-- TAB 1: Schools Explorer -->
-        <div id="tabContentSchools" class="p-4 sm:p-6 space-y-4">
+        <div id="tabContentSchools" class="p-3 sm:p-6 space-y-3 sm:space-y-4">
           <!-- Search & Filter Controls -->
-          <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+          <div class="space-y-2 sm:space-y-0 sm:grid sm:grid-cols-12 sm:gap-3">
             <!-- Search Input -->
             <div class="sm:col-span-6 relative">
               <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -209,76 +225,91 @@
               <input
                 type="text"
                 id="schoolSearchInput"
-                oninput="renderSchoolsTable()"
-                placeholder="Search by school name, EIIN, district, or upazilla..."
-                class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
+                oninput="renderSchools()"
+                placeholder="Search by school, EIIN, district..."
+                class="w-full pl-10 pr-8 py-2 sm:py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
               />
+              <button
+                id="btnClearSearch"
+                onclick="clearSearchInput()"
+                class="absolute inset-y-0 right-0 pr-2.5 flex items-center text-slate-400 hover:text-slate-600 hidden"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
             </div>
 
-            <!-- District Filter -->
-            <div class="sm:col-span-3">
-              <select
-                id="districtFilterSelect"
-                onchange="onDistrictChange()"
-                class="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
-              >
-                <option value="">All Districts</option>
-              </select>
-            </div>
+            <!-- District & Status Filters -->
+            <div class="grid grid-cols-2 sm:col-span-6 gap-2 sm:gap-3">
+              <!-- District Filter -->
+              <div>
+                <select
+                  id="districtFilterSelect"
+                  onchange="onDistrictChange()"
+                  class="w-full px-2.5 sm:px-3 py-2 sm:py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium text-slate-700 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all truncate"
+                >
+                  <option value="">All Districts</option>
+                </select>
+              </div>
 
-            <!-- Status Filter -->
-            <div class="sm:col-span-3">
-              <select
-                id="statusFilterSelect"
-                onchange="renderSchoolsTable()"
-                class="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
-              >
-                <option value="all">All Statuses</option>
-                <option value="available" selected>Available to Import Only</option>
-                <option value="added">Already in Runtime</option>
-              </select>
+              <!-- Status Filter -->
+              <div>
+                <select
+                  id="statusFilterSelect"
+                  onchange="renderSchools()"
+                  class="w-full px-2.5 sm:px-3 py-2 sm:py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium text-slate-700 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all truncate"
+                >
+                  <option value="all">All Statuses</option>
+                  <option value="available" selected>Available Only</option>
+                  <option value="added">In Runtime</option>
+                </select>
+              </div>
             </div>
           </div>
 
           <!-- Selection & Action Header Bar -->
-          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 pb-1 border-t border-slate-100">
-            <div class="flex items-center gap-3 text-xs sm:text-sm font-medium text-slate-600">
-              <label class="inline-flex items-center gap-2 cursor-pointer select-none">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pt-2 pb-1 border-t border-slate-100">
+            <div class="flex items-center justify-between sm:justify-start gap-2.5 text-xs sm:text-sm font-medium text-slate-600">
+              <label class="inline-flex items-center gap-2 cursor-pointer select-none py-1">
                 <input
                   type="checkbox"
                   id="selectAllCheckbox"
                   onchange="toggleSelectAllFiltered(this.checked)"
-                  class="w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500"
+                  class="w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer"
                 />
-                <span>Select All Filtered</span>
+                <span class="text-xs sm:text-sm">Select All</span>
               </label>
-              <span class="text-slate-300">|</span>
-              <span id="selectedCountText" class="text-slate-500">0 selected</span>
-              <button
-                id="btnClearSelection"
-                onclick="clearSelection()"
-                class="text-indigo-600 hover:text-indigo-800 text-xs hidden underline"
-              >
-                Clear
-              </button>
+              <div class="flex items-center gap-2">
+                <span class="text-slate-300">|</span>
+                <span id="selectedCountText" class="text-slate-500 text-xs sm:text-sm">0 selected</span>
+                <button
+                  id="btnClearSelection"
+                  onclick="clearSelection()"
+                  class="text-indigo-600 hover:text-indigo-800 text-xs font-semibold hidden underline ml-1"
+                >
+                  Clear
+                </button>
+              </div>
             </div>
 
-            <div class="flex items-center gap-2">
+            <div class="grid grid-cols-2 sm:flex sm:items-center gap-2 w-full sm:w-auto">
               <button
                 id="btnImportAllAvailable"
                 onclick="promptImportAll()"
-                class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-all"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 rounded-lg transition-all"
               >
-                <span>Import All Available</span>
+                <span>Import All Avail.</span>
               </button>
 
               <button
                 id="btnImportSelected"
                 onclick="openExecuteModalForSelected()"
                 disabled
-                class="inline-flex items-center gap-1.5 px-4 py-1.5 text-xs sm:text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed shadow-sm transition-all active:scale-95"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-3.5 py-2 text-xs sm:text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 active:scale-95 disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed shadow-xs transition-all"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
                 </svg>
@@ -287,8 +318,13 @@
             </div>
           </div>
 
-          <!-- Schools Table -->
-          <div class="overflow-x-auto border border-slate-200 rounded-xl">
+          <!-- Mobile Card List View (Visible on Small Screens) -->
+          <div id="schoolsListMobile" class="md:hidden space-y-2.5">
+            <!-- Dynamic Mobile Cards -->
+          </div>
+
+          <!-- Desktop Schools Table (Visible on md and larger screens) -->
+          <div class="hidden md:block overflow-x-auto border border-slate-200 rounded-xl">
             <table class="w-full text-left text-xs sm:text-sm text-slate-600">
               <thead class="bg-slate-50 border-b border-slate-200 text-slate-700 text-xs uppercase font-semibold">
                 <tr>
@@ -314,16 +350,16 @@
           </div>
 
           <!-- Results Count Indicator -->
-          <div class="flex items-center justify-between text-xs text-slate-500 px-1">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-slate-500 px-1 pt-1">
             <span id="tableResultsCount">Showing 0 schools</span>
-            <span class="italic text-slate-400">Click school row to view details</span>
+            <span class="italic text-slate-400">Tap a school to inspect student records</span>
           </div>
         </div>
 
         <!-- TAB 2: Bulk EIIN / Text Paste -->
-        <div id="tabContentBulk" class="p-4 sm:p-6 space-y-6 hidden">
+        <div id="tabContentBulk" class="p-3 sm:p-6 space-y-4 sm:space-y-6 hidden">
           <div>
-            <h2 class="text-base font-bold text-slate-800">Paste Text or EIIN List</h2>
+            <h2 class="text-sm sm:text-base font-bold text-slate-800">Paste Text or EIIN List</h2>
             <p class="text-xs sm:text-sm text-slate-500 mt-1">
               Paste raw school lists, documents, or multiple EIIN numbers separated by spaces, commas, or new lines. The tool automatically detects all EIINs and cross-references the archive.
             </p>
@@ -332,14 +368,14 @@
           <div class="space-y-3">
             <textarea
               id="bulkTextInput"
-              rows="6"
+              rows="5"
               oninput="parseBulkInput()"
               placeholder="e.g. 103088, 103089
 or paste arbitrary text containing school names and EIIN codes..."
-              class="w-full p-4 font-mono text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all resize-y"
+              class="w-full p-3 sm:p-4 font-mono text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all resize-y"
             ></textarea>
 
-            <div class="flex items-center justify-between">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
               <div id="bulkParseSummary" class="text-xs font-medium text-slate-600">
                 0 EIIN(s) detected
               </div>
@@ -347,7 +383,7 @@ or paste arbitrary text containing school names and EIIN codes..."
                 id="btnImportBulk"
                 onclick="openExecuteModalForBulk()"
                 disabled
-                class="inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed shadow-sm transition-all"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2.5 text-xs sm:text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed shadow-xs transition-all active:scale-95"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14" />
@@ -361,7 +397,7 @@ or paste arbitrary text containing school names and EIIN codes..."
           <!-- Parsed EIINs Preview List -->
           <div id="bulkParsedContainer" class="space-y-3 pt-4 border-t border-slate-100 hidden">
             <h3 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Detected Schools Breakdown</h3>
-            <div id="bulkParsedGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            <div id="bulkParsedGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-3">
               <!-- Dynamic chips -->
             </div>
           </div>
@@ -369,24 +405,55 @@ or paste arbitrary text containing school names and EIIN codes..."
       </section>
     </main>
 
+    <!-- Mobile Floating Selection Bar (Fixed bottom on small screens when schools are selected) -->
+    <div
+      id="floatingSelectionBar"
+      class="fixed bottom-3 inset-x-3 z-40 bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 rounded-2xl shadow-xl border border-slate-800 md:hidden flex items-center justify-between gap-3 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-200 ease-out"
+    >
+      <div class="flex items-center gap-2 min-w-0">
+        <div class="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-xs font-bold shrink-0" id="floatingSelectedCount">
+          0
+        </div>
+        <span class="text-xs font-medium text-slate-200 truncate">Schools Selected</span>
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <button
+          onclick="clearSelection()"
+          class="px-2.5 py-1.5 text-xs text-slate-400 hover:text-white font-medium"
+        >
+          Clear
+        </button>
+        <button
+          onclick="openExecuteModalForSelected()"
+          class="px-3.5 py-1.5 text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl active:scale-95 transition-all flex items-center gap-1"
+        >
+          <span>Import</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <!-- Execution Modal (Runs run.py with Live Terminal Viewer) -->
-    <div id="executeModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+    <div id="executeModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-2.5 sm:p-4 hidden">
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-2xl max-w-2xl w-full max-h-[92vh] sm:max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150 my-auto">
         <!-- Modal Header -->
-        <div class="p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div class="p-4 sm:p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/70 shrink-0">
+          <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+            <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="4 17 10 11 4 5" />
                 <line x1="12" y1="19" x2="20" y2="19" />
               </svg>
             </div>
-            <div>
-              <h3 class="text-base font-bold text-slate-800" id="executeModalTitle">Execute Import Pipeline</h3>
-              <p class="text-xs text-slate-500" id="executeModalSubtitle">Runs run.py to import selected schools and sync leaderboard</p>
+            <div class="min-w-0">
+              <h3 class="text-sm sm:text-base font-bold text-slate-800 truncate" id="executeModalTitle">Execute Import Pipeline</h3>
+              <p class="text-[11px] sm:text-xs text-slate-500 truncate" id="executeModalSubtitle">Imports selected schools and updates rankings</p>
             </div>
           </div>
-          <button onclick="closeExecuteModal()" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+          <button onclick="closeExecuteModal()" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100 transition-colors shrink-0">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
@@ -395,21 +462,21 @@ or paste arbitrary text containing school names and EIIN codes..."
         </div>
 
         <!-- Modal Body (Config & Terminal) -->
-        <div class="p-5 overflow-y-auto space-y-4 flex-1">
+        <div class="p-4 sm:p-5 overflow-y-auto space-y-3.5 sm:space-y-4 flex-1">
           <!-- Options Form (Visible before execution) -->
-          <div id="executeOptionsSection" class="space-y-4">
+          <div id="executeOptionsSection" class="space-y-3.5 sm:space-y-4">
             <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Selected Schools To Import</label>
-              <div id="executeSchoolsSummary" class="p-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono text-slate-700 max-h-28 overflow-y-auto">
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Selected Schools To Import</label>
+              <div id="executeSchoolsSummary" class="p-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono text-slate-700 max-h-24 sm:max-h-28 overflow-y-auto">
                 No schools selected
               </div>
             </div>
 
             <!-- Git Operation Mode -->
             <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Git Pipeline Mode</label>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Git Pipeline Mode</label>
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                <label class="flex items-center gap-2 p-3 border rounded-xl cursor-pointer hover:bg-slate-50 transition-colors text-xs font-medium border-indigo-500 bg-indigo-50/40 text-indigo-900" id="labelGitPush">
+                <label class="flex items-center gap-2.5 p-2.5 sm:p-3 border rounded-xl cursor-pointer hover:bg-slate-50 transition-colors text-xs font-medium border-indigo-500 bg-indigo-50/40 text-indigo-900" id="labelGitPush">
                   <input type="radio" name="gitMode" value="push" checked class="text-indigo-600" onchange="updateGitModeStyle()" />
                   <div>
                     <div class="font-bold">Commit & Push</div>
@@ -417,7 +484,7 @@ or paste arbitrary text containing school names and EIIN codes..."
                   </div>
                 </label>
 
-                <label class="flex items-center gap-2 p-3 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-50 transition-colors text-xs font-medium text-slate-700" id="labelGitNoPush">
+                <label class="flex items-center gap-2.5 p-2.5 sm:p-3 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-50 transition-colors text-xs font-medium text-slate-700" id="labelGitNoPush">
                   <input type="radio" name="gitMode" value="no_push" class="text-indigo-600" onchange="updateGitModeStyle()" />
                   <div>
                     <div class="font-bold">Commit Only</div>
@@ -425,7 +492,7 @@ or paste arbitrary text containing school names and EIIN codes..."
                   </div>
                 </label>
 
-                <label class="flex items-center gap-2 p-3 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-50 transition-colors text-xs font-medium text-slate-700" id="labelGitNoGit">
+                <label class="flex items-center gap-2.5 p-2.5 sm:p-3 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-50 transition-colors text-xs font-medium text-slate-700" id="labelGitNoGit">
                   <input type="radio" name="gitMode" value="no_git" class="text-indigo-600" onchange="updateGitModeStyle()" />
                   <div>
                     <div class="font-bold">Skip Git</div>
@@ -441,8 +508,8 @@ or paste arbitrary text containing school names and EIIN codes..."
               <input
                 type="text"
                 id="customCommitMessage"
-                placeholder="Leave blank for automatic message (e.g. add new school: School Name)"
-                class="w-full px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
+                placeholder="Auto-generated if left blank"
+                class="w-full px-3.5 py-2 sm:py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
               />
             </div>
           </div>
@@ -456,29 +523,29 @@ or paste arbitrary text containing school names and EIIN codes..."
               </span>
               <button onclick="copyTerminalLogs()" class="text-xs text-indigo-600 hover:text-indigo-800 font-medium">Copy Output</button>
             </div>
-            <pre id="terminalLogs" class="w-full p-4 bg-slate-900 text-slate-100 font-mono text-xs rounded-xl overflow-x-auto max-h-72 overflow-y-auto leading-relaxed border border-slate-800 whitespace-pre-wrap">Starting run.py execution...</pre>
+            <pre id="terminalLogs" class="w-full p-3 sm:p-4 bg-slate-900 text-slate-100 font-mono text-xs rounded-xl overflow-x-auto max-h-56 sm:max-h-72 overflow-y-auto leading-relaxed border border-slate-800 whitespace-pre-wrap">Starting run.py execution...</pre>
           </div>
         </div>
 
         <!-- Modal Footer -->
-        <div class="p-4 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between">
-          <div id="executeResultBadge" class="text-xs font-semibold hidden">
+        <div class="p-3 sm:p-4 border-t border-slate-100 bg-slate-50/70 flex items-center justify-between shrink-0 gap-2">
+          <div id="executeResultBadge" class="text-xs font-semibold hidden truncate">
             <!-- Dynamic Success / Error Badge -->
           </div>
           <div class="flex items-center gap-2 ml-auto">
             <button
               onclick="closeExecuteModal()"
               id="btnCancelExecute"
-              class="px-4 py-2 text-xs sm:text-sm font-semibold text-slate-600 hover:bg-slate-200 rounded-lg transition-colors"
+              class="px-3.5 py-2 text-xs sm:text-sm font-semibold text-slate-600 hover:bg-slate-200 rounded-lg transition-colors"
             >
               Cancel
             </button>
             <button
               id="btnConfirmExecute"
               onclick="executeRunPipeline()"
-              class="inline-flex items-center gap-2 px-5 py-2 text-xs sm:text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 shadow-md shadow-indigo-100 transition-all active:scale-95"
+              class="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 shadow-md shadow-indigo-100 transition-all active:scale-95"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <polygon points="5 3 19 12 5 21 5 3" />
               </svg>
               <span>Execute run.py</span>
@@ -489,14 +556,14 @@ or paste arbitrary text containing school names and EIIN codes..."
     </div>
 
     <!-- School Details Modal -->
-    <div id="detailsModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col overflow-hidden">
-        <div class="p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
-          <div>
-            <h3 class="text-base font-bold text-slate-800" id="detailsModalTitle">School Details</h3>
-            <p class="text-xs text-slate-500 font-mono" id="detailsModalSubtitle">EIIN: --</p>
+    <div id="detailsModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-2.5 sm:p-4 hidden">
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-2xl max-w-3xl w-full max-h-[92vh] sm:max-h-[90vh] flex flex-col overflow-hidden my-auto">
+        <div class="p-4 sm:p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/70 shrink-0">
+          <div class="min-w-0 pr-2">
+            <h3 class="text-sm sm:text-base font-bold text-slate-800 truncate" id="detailsModalTitle">School Details</h3>
+            <p class="text-[11px] sm:text-xs text-slate-500 font-mono truncate" id="detailsModalSubtitle">EIIN: --</p>
           </div>
-          <button onclick="closeDetailsModal()" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+          <button onclick="closeDetailsModal()" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-lg hover:bg-slate-100 transition-colors shrink-0">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
@@ -504,40 +571,40 @@ or paste arbitrary text containing school names and EIIN codes..."
           </button>
         </div>
 
-        <div class="p-5 overflow-y-auto space-y-4 flex-1">
+        <div class="p-3.5 sm:p-5 overflow-y-auto space-y-3.5 sm:space-y-4 flex-1">
           <!-- School Stats Grid -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-center">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
+            <div class="p-2.5 sm:p-3 bg-slate-50 rounded-xl border border-slate-200 text-center">
               <div class="text-[10px] uppercase font-bold text-slate-400">Total Appeared</div>
-              <div id="modalStatAppeared" class="text-lg font-black text-slate-800">--</div>
+              <div id="modalStatAppeared" class="text-base sm:text-lg font-black text-slate-800">--</div>
             </div>
-            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-center">
+            <div class="p-2.5 sm:p-3 bg-slate-50 rounded-xl border border-slate-200 text-center">
               <div class="text-[10px] uppercase font-bold text-emerald-600">Passed</div>
-              <div id="modalStatPassed" class="text-lg font-black text-emerald-600">--</div>
+              <div id="modalStatPassed" class="text-base sm:text-lg font-black text-emerald-600">--</div>
             </div>
-            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-center">
+            <div class="p-2.5 sm:p-3 bg-slate-50 rounded-xl border border-slate-200 text-center">
               <div class="text-[10px] uppercase font-bold text-purple-600">GPA 5.00</div>
-              <div id="modalStatGpa5" class="text-lg font-black text-purple-600">--</div>
+              <div id="modalStatGpa5" class="text-base sm:text-lg font-black text-purple-600">--</div>
             </div>
-            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-center">
+            <div class="p-2.5 sm:p-3 bg-slate-50 rounded-xl border border-slate-200 text-center">
               <div class="text-[10px] uppercase font-bold text-indigo-600">Pass Rate</div>
-              <div id="modalStatPassRate" class="text-lg font-black text-indigo-600">--</div>
+              <div id="modalStatPassRate" class="text-base sm:text-lg font-black text-indigo-600">--</div>
             </div>
           </div>
 
           <!-- Students Preview Table -->
           <div>
             <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Student Records Preview</h4>
-            <div class="border border-slate-200 rounded-xl overflow-x-auto max-h-60 overflow-y-auto">
+            <div class="border border-slate-200 rounded-xl overflow-x-auto max-h-56 sm:max-h-64 overflow-y-auto">
               <table class="w-full text-left text-xs text-slate-600">
                 <thead class="bg-slate-50 border-b border-slate-200 text-slate-700 font-semibold sticky top-0">
                   <tr>
-                    <th class="p-2.5">Roll</th>
-                    <th class="p-2.5">Student Name</th>
-                    <th class="p-2.5">Group</th>
-                    <th class="p-2.5 text-center">GPA</th>
-                    <th class="p-2.5 text-center">Marks</th>
-                    <th class="p-2.5 text-center">Status</th>
+                    <th class="p-2 sm:p-2.5">Roll</th>
+                    <th class="p-2 sm:p-2.5">Student Name</th>
+                    <th class="p-2 sm:p-2.5 hidden xs:table-cell">Group</th>
+                    <th class="p-2 sm:p-2.5 text-center">GPA</th>
+                    <th class="p-2 sm:p-2.5 text-center">Marks</th>
+                    <th class="p-2 sm:p-2.5 text-center">Status</th>
                   </tr>
                 </thead>
                 <tbody id="modalStudentsBody" class="divide-y divide-slate-100">
@@ -548,7 +615,7 @@ or paste arbitrary text containing school names and EIIN codes..."
           </div>
         </div>
 
-        <div class="p-4 border-t border-slate-100 bg-slate-50/50 flex justify-end">
+        <div class="p-3 sm:p-4 border-t border-slate-100 bg-slate-50/70 flex justify-end shrink-0">
           <button onclick="closeDetailsModal()" class="px-4 py-2 text-xs font-semibold text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 rounded-lg transition-colors">
             Close
           </button>
@@ -557,9 +624,9 @@ or paste arbitrary text containing school names and EIIN codes..."
     </div>
 
     <!-- Toast Notification -->
-    <div id="toast" class="fixed bottom-5 right-5 z-50 px-4 py-3 bg-slate-900 text-white text-xs sm:text-sm font-medium rounded-xl shadow-xl border border-slate-800 transition-all duration-200 transform translate-y-20 opacity-0 pointer-events-none flex items-center gap-2">
-      <span id="toastIcon"></span>
-      <span id="toastMessage">Notification message</span>
+    <div id="toast" class="fixed bottom-4 inset-x-3 sm:inset-x-auto sm:right-5 sm:bottom-5 z-50 px-4 py-3 bg-slate-900 text-white text-xs sm:text-sm font-medium rounded-xl shadow-xl border border-slate-800 transition-all duration-200 transform translate-y-24 opacity-0 pointer-events-none flex items-center gap-2.5">
+      <span id="toastIcon" class="shrink-0"></span>
+      <span id="toastMessage" class="truncate">Notification message</span>
     </div>
 
     <script>
@@ -589,10 +656,17 @@ or paste arbitrary text containing school names and EIIN codes..."
           toastIcon.innerHTML = `<svg class="w-4 h-4 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>`;
         }
 
-        toast.classList.remove("translate-y-20", "opacity-0", "pointer-events-none");
+        toast.classList.remove("translate-y-24", "opacity-0", "pointer-events-none");
         setTimeout(() => {
-          toast.classList.add("translate-y-20", "opacity-0", "pointer-events-none");
+          toast.classList.add("translate-y-24", "opacity-0", "pointer-events-none");
         }, 3500);
+      }
+
+      function clearSearchInput() {
+        const input = document.getElementById("schoolSearchInput");
+        input.value = "";
+        document.getElementById("btnClearSearch").classList.add("hidden");
+        renderSchools();
       }
 
       async function loadAllData(showNotification = false) {
@@ -616,8 +690,8 @@ or paste arbitrary text containing school names and EIIN codes..."
           // Populate district select
           populateDistrictFilter();
 
-          // Render table
-          renderSchoolsTable();
+          // Render schools list
+          renderSchools();
 
           if (showNotification) {
             showToast("Schools data refreshed from archive and runtime.", "success");
@@ -646,6 +720,13 @@ or paste arbitrary text containing school names and EIIN codes..."
         const selectedDistrict = document.getElementById("districtFilterSelect").value;
         const statusFilter = document.getElementById("statusFilterSelect").value;
 
+        // Toggle clear search button
+        const btnClear = document.getElementById("btnClearSearch");
+        if (btnClear) {
+          if (query) btnClear.classList.remove("hidden");
+          else btnClear.classList.add("hidden");
+        }
+
         return allSchools.filter(s => {
           if (statusFilter === "available" && s.status !== "available") return false;
           if (statusFilter === "added" && s.status !== "added") return false;
@@ -660,6 +741,11 @@ or paste arbitrary text containing school names and EIIN codes..."
           }
           return true;
         });
+      }
+
+      function renderSchools() {
+        renderSchoolsTable();
+        renderSchoolsMobile();
       }
 
       function renderSchoolsTable() {
@@ -704,7 +790,7 @@ or paste arbitrary text containing school names and EIIN codes..."
                   ${isSelected ? "checked" : ""}
                   ${isAdded ? "disabled" : ""}
                   onchange="toggleSelectSchool('${s.eiin}', this.checked)"
-                  class="w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 disabled:opacity-30 disabled:cursor-not-allowed"
+                  class="w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
                 />
               </td>
               <td class="p-3 font-mono font-bold text-slate-800">${s.eiin}</td>
@@ -727,13 +813,13 @@ or paste arbitrary text containing school names and EIIN codes..."
                     class="p-1.5 text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors"
                     title="View Students & Summary"
                   >
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
                   </button>
                   ${
                     !isAdded
                       ? `<button
                           onclick="quickImportSingle('${s.eiin}')"
-                          class="px-2.5 py-1 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-md transition-colors"
+                          class="px-2.5 py-1 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-md transition-colors shadow-xs active:scale-95"
                           title="Import this school now"
                         >
                           + Add
@@ -750,13 +836,112 @@ or paste arbitrary text containing school names and EIIN codes..."
         updateSelectionBar();
       }
 
+      function renderSchoolsMobile() {
+        const mobileContainer = document.getElementById("schoolsListMobile");
+        const filtered = getFilteredSchools();
+
+        if (filtered.length === 0) {
+          mobileContainer.innerHTML = `
+            <div class="p-6 text-center text-slate-400 bg-slate-50 rounded-xl border border-slate-200">
+              No schools match your search or filter criteria.
+            </div>
+          `;
+          return;
+        }
+
+        let html = "";
+        filtered.forEach(s => {
+          const isSelected = selectedEiins.has(s.eiin);
+          const isAdded = s.status === "added";
+
+          const statusBadge = isAdded
+            ? `<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                <svg class="w-2.5 h-2.5 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                Runtime
+               </span>`
+            : `<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-700 border border-amber-200">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500 mr-1"></span>
+                Available
+               </span>`;
+
+          html += `
+            <div class="p-3.5 bg-white rounded-xl border ${isSelected ? "border-indigo-500 bg-indigo-50/20 shadow-xs" : "border-slate-200"} space-y-2.5 transition-all">
+              <!-- Top Row: Checkbox + EIIN + Status -->
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 min-w-0">
+                  <input
+                    type="checkbox"
+                    value="${s.eiin}"
+                    ${isSelected ? "checked" : ""}
+                    ${isAdded ? "disabled" : ""}
+                    onchange="toggleSelectSchool('${s.eiin}', this.checked)"
+                    class="w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer shrink-0"
+                  />
+                  <span class="font-mono font-bold text-xs text-slate-800 bg-slate-100 px-2 py-0.5 rounded-md">${s.eiin}</span>
+                </div>
+                <div>${statusBadge}</div>
+              </div>
+
+              <!-- School Name -->
+              <div class="font-semibold text-slate-900 text-sm leading-snug cursor-pointer hover:text-indigo-600 transition-colors" onclick="showSchoolDetails('${s.eiin}')">
+                ${s.name}
+              </div>
+
+              <!-- District & Upazilla -->
+              <div class="flex items-center gap-1.5 text-xs text-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-slate-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span class="truncate">${s.district.replace(/_/g, " ")} • ${s.upazilla.replace(/_/g, " ")}</span>
+              </div>
+
+              <!-- Stats & Quick Actions -->
+              <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-3 text-xs">
+                  <div>
+                    <span class="text-slate-400 text-[10px] block font-medium">STUDENTS</span>
+                    <span class="font-bold text-slate-700">${s.records_count}</span>
+                  </div>
+                  <div>
+                    <span class="text-purple-500 text-[10px] block font-medium">GPA 5.00</span>
+                    <span class="font-bold text-purple-600">${s.gpa5_count}</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-1.5">
+                  <button
+                    onclick="showSchoolDetails('${s.eiin}')"
+                    class="px-2.5 py-1.5 text-xs font-medium text-slate-600 bg-slate-50 hover:bg-slate-100 rounded-lg transition-colors"
+                  >
+                    Details
+                  </button>
+                  ${
+                    !isAdded
+                      ? `<button
+                          onclick="quickImportSingle('${s.eiin}')"
+                          class="px-3 py-1.5 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-700 active:scale-95 rounded-lg transition-colors shadow-xs"
+                        >
+                          + Add
+                        </button>`
+                      : `<span class="px-2 py-1 text-xs text-slate-400 font-medium">Added</span>`
+                  }
+                </div>
+              </div>
+            </div>
+          `;
+        });
+
+        mobileContainer.innerHTML = html;
+      }
+
       function toggleSelectSchool(eiin, isChecked) {
         if (isChecked) {
           selectedEiins.add(eiin);
         } else {
           selectedEiins.delete(eiin);
         }
-        updateSelectionBar();
+        renderSchools();
       }
 
       function toggleSelectAllFiltered(isChecked) {
@@ -770,13 +955,13 @@ or paste arbitrary text containing school names and EIIN codes..."
             }
           }
         });
-        renderSchoolsTable();
+        renderSchools();
       }
 
       function clearSelection() {
         selectedEiins.clear();
         document.getElementById("selectAllCheckbox").checked = false;
-        renderSchoolsTable();
+        renderSchools();
       }
 
       function updateSelectionBar() {
@@ -784,21 +969,33 @@ or paste arbitrary text containing school names and EIIN codes..."
         const text = document.getElementById("selectedCountText");
         const btnClear = document.getElementById("btnClearSelection");
         const btnImport = document.getElementById("btnImportSelected");
+        const floatingBar = document.getElementById("floatingSelectionBar");
+        const floatingCount = document.getElementById("floatingSelectedCount");
 
         text.textContent = `${count} selected`;
+        if (floatingCount) floatingCount.textContent = count;
+
         if (count > 0) {
           btnClear.classList.remove("hidden");
           btnImport.disabled = false;
-          btnImport.textContent = `Import Selected (${count})`;
+          btnImport.textContent = `Import (${count})`;
+
+          if (floatingBar) {
+            floatingBar.classList.remove("translate-y-24", "opacity-0", "pointer-events-none");
+          }
         } else {
           btnClear.classList.add("hidden");
           btnImport.disabled = true;
           btnImport.textContent = `Import Selected`;
+
+          if (floatingBar) {
+            floatingBar.classList.add("translate-y-24", "opacity-0", "pointer-events-none");
+          }
         }
       }
 
       function onDistrictChange() {
-        renderSchoolsTable();
+        renderSchools();
       }
 
       function switchTab(tab) {
@@ -808,13 +1005,13 @@ or paste arbitrary text containing school names and EIIN codes..."
         const contentBulk = document.getElementById("tabContentBulk");
 
         if (tab === "schools") {
-          btnSchools.className = "py-4 text-sm font-semibold tab-active flex items-center gap-2 transition-colors";
-          btnBulk.className = "py-4 text-sm font-medium text-slate-500 hover:text-slate-700 flex items-center gap-2 transition-colors";
+          btnSchools.className = "py-3 sm:py-4 px-1 text-xs sm:text-sm font-semibold tab-active flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition-colors";
+          btnBulk.className = "py-3 sm:py-4 px-1 text-xs sm:text-sm font-medium text-slate-500 hover:text-slate-700 flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition-colors";
           contentSchools.classList.remove("hidden");
           contentBulk.classList.add("hidden");
         } else {
-          btnBulk.className = "py-4 text-sm font-semibold tab-active flex items-center gap-2 transition-colors";
-          btnSchools.className = "py-4 text-sm font-medium text-slate-500 hover:text-slate-700 flex items-center gap-2 transition-colors";
+          btnBulk.className = "py-3 sm:py-4 px-1 text-xs sm:text-sm font-semibold tab-active flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition-colors";
+          btnSchools.className = "py-3 sm:py-4 px-1 text-xs sm:text-sm font-medium text-slate-500 hover:text-slate-700 flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition-colors";
           contentBulk.classList.remove("hidden");
           contentSchools.classList.add("hidden");
         }
@@ -850,11 +1047,11 @@ or paste arbitrary text containing school names and EIIN codes..."
             const data = await res.json();
             bulkParsedResult = data;
 
-            summary.textContent = `${data.eiins.length} EIIN(s) detected (${data.valid_count} ready to import, ${data.already_added_count} already added, ${data.missing_count} not in archive)`;
+            summary.textContent = `${data.eiins.length} EIIN(s) found (${data.valid_count} ready, ${data.already_added_count} in runtime, ${data.missing_count} not in archive)`;
 
             if (data.valid_count > 0) {
               btnImport.disabled = false;
-              btnImport.textContent = `Import ${data.valid_count} Available School(s)`;
+              btnImport.textContent = `Import ${data.valid_count} Available`;
             } else {
               btnImport.disabled = true;
               btnImport.textContent = `Import Detected Schools`;
@@ -867,9 +1064,9 @@ or paste arbitrary text containing school names and EIIN codes..."
               if (!item.found_in_archive) {
                 badge = `<span class="text-[10px] font-bold text-rose-600 bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200">Not In Archive</span>`;
               } else if (item.status === "added") {
-                badge = `<span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">Already Added</span>`;
+                badge = `<span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">In Runtime</span>`;
               } else {
-                badge = `<span class="text-[10px] font-bold text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">Ready (${item.records_count} students)</span>`;
+                badge = `<span class="text-[10px] font-bold text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">Ready (${item.records_count} rec)</span>`;
               }
 
               html += `
@@ -962,15 +1159,15 @@ or paste arbitrary text containing school names and EIIN codes..."
         const ng = document.getElementById("labelGitNoGit");
 
         [p, np, ng].forEach(el => {
-          el.className = "flex items-center gap-2 p-3 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-50 transition-colors text-xs font-medium text-slate-700";
+          el.className = "flex items-center gap-2.5 p-2.5 sm:p-3 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-50 transition-colors text-xs font-medium text-slate-700";
         });
 
         if (mode === "push") {
-          p.className = "flex items-center gap-2 p-3 border rounded-xl cursor-pointer text-xs font-medium border-indigo-500 bg-indigo-50/40 text-indigo-900";
+          p.className = "flex items-center gap-2.5 p-2.5 sm:p-3 border rounded-xl cursor-pointer text-xs font-medium border-indigo-500 bg-indigo-50/40 text-indigo-900";
         } else if (mode === "no_push") {
-          np.className = "flex items-center gap-2 p-3 border rounded-xl cursor-pointer text-xs font-medium border-indigo-500 bg-indigo-50/40 text-indigo-900";
+          np.className = "flex items-center gap-2.5 p-2.5 sm:p-3 border rounded-xl cursor-pointer text-xs font-medium border-indigo-500 bg-indigo-50/40 text-indigo-900";
         } else {
-          ng.className = "flex items-center gap-2 p-3 border rounded-xl cursor-pointer text-xs font-medium border-indigo-500 bg-indigo-50/40 text-indigo-900";
+          ng.className = "flex items-center gap-2.5 p-2.5 sm:p-3 border rounded-xl cursor-pointer text-xs font-medium border-indigo-500 bg-indigo-50/40 text-indigo-900";
         }
       }
 
@@ -1095,12 +1292,12 @@ or paste arbitrary text containing school names and EIIN codes..."
 
             html += `
               <tr class="hover:bg-slate-50">
-                <td class="p-2.5 font-mono font-bold text-slate-800">${r.roll || "-"}</td>
-                <td class="p-2.5 font-medium text-slate-900">${r.name || "-"}</td>
-                <td class="p-2.5 text-slate-500">${r.group || "-"}</td>
-                <td class="p-2.5 text-center font-bold ${parseFloat(r.gpa) >= 5 ? "text-purple-600 font-black" : "text-slate-700"}">${r.gpa !== undefined ? r.gpa : (r.grade || "-")}</td>
-                <td class="p-2.5 text-center font-mono font-semibold text-slate-700">${r.total_marks || "-"}</td>
-                <td class="p-2.5 text-center">${badge}</td>
+                <td class="p-2 sm:p-2.5 font-mono font-bold text-slate-800">${r.roll || "-"}</td>
+                <td class="p-2 sm:p-2.5 font-medium text-slate-900">${r.name || "-"}</td>
+                <td class="p-2 sm:p-2.5 text-slate-500 hidden xs:table-cell">${r.group || "-"}</td>
+                <td class="p-2 sm:p-2.5 text-center font-bold ${parseFloat(r.gpa) >= 5 ? "text-purple-600 font-black" : "text-slate-700"}">${r.gpa !== undefined ? r.gpa : (r.grade || "-")}</td>
+                <td class="p-2 sm:p-2.5 text-center font-mono font-semibold text-slate-700">${r.total_marks || "-"}</td>
+                <td class="p-2 sm:p-2.5 text-center">${badge}</td>
               </tr>
             `;
           });
