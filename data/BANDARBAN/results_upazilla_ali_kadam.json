@@ -1,0 +1,1223 @@
+{
+  "board": "CHATTOGRAM",
+  "district": "BANDARBAN",
+  "upazilla": "ALI_KADAM",
+  "upazilla_slug": "ali_kadam",
+  "summary": {
+    "total_institutions": 1,
+    "total_records": 15,
+    "total_passed": 6,
+    "total_failed": 9,
+    "total_gpa_5": 0,
+    "last_updated": "2026-08-24 16:55:51"
+  },
+  "institutions": [
+    {
+      "eiin": "103086",
+      "name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "zilla": "BANDARBAN",
+      "thana": "ALI_KADAM",
+      "appeared": 15,
+      "passed": 6,
+      "gpa5": 0,
+      "pass_percentage": "40.00%",
+      "students_count": 15
+    }
+  ],
+  "records": [
+    {
+      "name": "PROSHENJIT SHIL",
+      "roll": "719446",
+      "total_mark": 666,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 140,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 102,
+          "grade": "B"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "126",
+          "subject": "HIGHER MATHEMATICS",
+          "mark": 76,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ALY MAY MARMA",
+      "roll": "719445",
+      "total_mark": 601,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 132,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 103,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 76,
+          "grade": "A"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "126",
+          "subject": "HIGHER MATHEMATICS",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SUMAIYA JANNAT",
+      "roll": "719444",
+      "total_mark": 588,
+      "grade": "2.56",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 117,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 76,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "126",
+          "subject": "HIGHER MATHEMATICS",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TASNIM JANNAT IREN",
+      "roll": "719448",
+      "total_mark": 541,
+      "grade": "2.22",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 107,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 93,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MD.MEHEDI HASAN",
+      "roll": "719454",
+      "total_mark": 541,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 113,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 79,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 98,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHABIKUN NAHAR",
+      "roll": "719447",
+      "total_mark": 523,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 109,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 100,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "NING NING WANG MARMA",
+      "roll": "719457",
+      "total_mark": 653,
+      "grade": "3.56",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 144,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 115,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SAIMA AKTER",
+      "roll": "719450",
+      "total_mark": 609,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 122,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 96,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 70,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHARMINA AKTER",
+      "roll": "719451",
+      "total_mark": 499,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 120,
+          "grade": "A-"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 74,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHAWKAT KABIR NISHAT",
+      "roll": "719452",
+      "total_mark": 625,
+      "grade": "3.11",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 117,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 83,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 43,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 98,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "JANNATUL FERDOUS NISHI",
+      "roll": "719449",
+      "total_mark": 630,
+      "grade": "3.17",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 101,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 95,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TANVIR MOHAMMOD OPU",
+      "roll": "719455",
+      "total_mark": 537,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 116,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 107,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 70,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MD.FORKAN BAPPO",
+      "roll": "719458",
+      "total_mark": 552,
+      "grade": "2.72",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 106,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 88,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 98,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 47,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "DAYA BABU TONGCHONGYA",
+      "roll": "719456",
+      "total_mark": 584,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 121,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 93,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 45,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 95,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SYED ALAM",
+      "roll": "719453",
+      "total_mark": 528,
+      "grade": "FAIL",
+      "institution_name": "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "103086",
+      "zilla": "BANDARBAN",
+      "upazilla": "ALI_KADAM",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 104,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    }
+  ]
+}

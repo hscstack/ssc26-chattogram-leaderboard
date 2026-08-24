@@ -1,6 +1,6 @@
 {
-  "total_students": 14586,
-  "total_schools": 51,
+  "total_students": 14601,
+  "total_schools": 52,
   "total_gpa5": 5123,
   "total_districts": 5,
   "districts": [
@@ -11,6 +11,7 @@
     "RANGAMATI"
   ],
   "upazillas": [
+    "ALI KADAM",
     "BANDAR",
     "BANDARBAN SADAR",
     "CHAKORIA",
@@ -32,6 +33,7 @@
     "ABDUR RAHMAN GOVT. GIRLS' HIGH SCHOOL, CHATTOGRAM",
     "AGRABAD BALIKA BIDYALAY, CHATTOGRAM",
     "AGRABAD GOVT. COLONY HIGH SCHOOL, CHATTOGRAM",
+    "ALI KADAM GOVT. HIGH SCHOOL, BANDARBAN",
     "APARNA CHARAN CITY CORPORATION GIRLS' HIGH SCHOOL, CHATTOGRAM",
     "AUNKUR SOCIETY GIRLS' HIGH SCHOOL, CHATTOGRAM",
     "B. A. F. SHAHEEN SCHOOL AND COLLEGE, CHATTOGRAM",
