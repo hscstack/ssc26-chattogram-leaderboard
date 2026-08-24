@@ -105,154 +105,53 @@ document.addEventListener('DOMContentLoaded', () => {
     return str;
   }
 
+  const detailFileCache = new Map();
+
   // Initialization
   init();
 
   async function init() {
     try {
-      const manifestResponse = await fetch('data/manifest.json');
-      if (!manifestResponse.ok) throw new Error('Failed to fetch manifest');
-      const files = await manifestResponse.json();
-      
-      const requests = files.map(file => fetch(`data/${file}`).then(res => {
-        if (!res.ok) throw new Error(`Failed to fetch data/${file}`);
-        return res.json();
-      }));
-      
-      const results = await Promise.all(requests);
-      
-      const entityDiv = document.createElement('div');
-      const allStudents = [];
+      let loadedFromPrecomputed = false;
 
-      results.forEach(item => {
-        let fileDistrict = '';
-        let fileUpazilla = '';
-        let records = [];
+      try {
+        const [metaRes, rankedRes] = await Promise.all([
+          fetch('data/metadata.json'),
+          fetch('data/leaderboard_ranked.json')
+        ]);
 
-        if (Array.isArray(item)) {
-          records = item;
-        } else if (item && typeof item === 'object') {
-          fileDistrict = item.district || item.zilla || '';
-          fileUpazilla = item.upazilla || item.thana || '';
-          records = Array.isArray(item.records) ? item.records : [];
+        if (metaRes.ok && rankedRes.ok) {
+          const metadata = await metaRes.json();
+          rawData = await rankedRes.json();
+
+          districtsList = metadata.districts || [];
+          upazillasList = metadata.upazillas || [];
+          schoolsList = metadata.schools || [];
+          groupsList = metadata.groups || [];
+
+          statStudents.textContent = Number(metadata.total_students || 0).toLocaleString();
+          statSchools.textContent = Number(metadata.total_schools || 0).toLocaleString();
+          statGpa5.textContent = Number(metadata.total_gpa5 || 0).toLocaleString();
+          statDistricts.textContent = Number(metadata.total_districts || 0).toLocaleString();
+
+          loadedFromPrecomputed = true;
         }
+      } catch (e) {
+        console.warn('Precomputed data not available, falling back to manifest loading:', e);
+      }
 
-        records.forEach(r => {
-          let name = r.name ? String(r.name).trim() : 'UNKNOWN';
-          entityDiv.innerHTML = name;
-          name = entityDiv.textContent || name;
-
-          let school = r.school || r.institution_name || 'UNKNOWN';
-          entityDiv.innerHTML = school;
-          school = entityDiv.textContent || school;
-
-          const roll = r.roll !== undefined && r.roll !== null ? String(r.roll).trim() : '';
-
-          let district = r.district || r.zilla || fileDistrict || '';
-          district = formatDistrictName(district);
-
-          let upazilla = r.upazilla || r.thana || fileUpazilla || '';
-          upazilla = formatUpazillaName(upazilla);
-
-          // Marks calculation
-          let mark = 0;
-          if (r.total_mark !== undefined && r.total_mark !== null) {
-            mark = parseInt(r.total_mark, 10) || 0;
-          } else if (r.mark !== undefined && r.mark !== null) {
-            mark = parseInt(r.mark, 10) || 0;
-          }
-
-          // GPA and Status calculation
-          let gpa = 0.0;
-          let status = 'PASSED';
-          const rawGrade = r.grade !== undefined && r.grade !== null ? String(r.grade).trim().toUpperCase() : null;
-          const rawGpa = r.gpa !== undefined && r.gpa !== null ? parseFloat(r.gpa) : null;
-
-          if (rawGrade === 'FAIL' || r.status === 'FAILED') {
-            gpa = 0.0;
-            status = 'FAILED';
-          } else if (rawGpa !== null && !isNaN(rawGpa)) {
-            gpa = rawGpa;
-            status = r.status || (gpa > 0 ? 'PASSED' : 'FAILED');
-          } else if (rawGrade !== null) {
-            const parsed = parseFloat(rawGrade);
-            if (!isNaN(parsed)) {
-              gpa = parsed;
-              status = 'PASSED';
-            } else {
-              gpa = 0.0;
-              status = 'FAILED';
-            }
-          }
-
-          // Group determination
-          let group = '';
-          if (r.group && typeof r.group === 'string' && r.group.trim()) {
-            group = r.group.toUpperCase().trim();
-          } else if (r.subjects && Array.isArray(r.subjects) && r.subjects.length > 0) {
-            const codes = new Set(r.subjects.map(s => String(s.code || '').trim()));
-            const subNames = r.subjects.map(s => String(s.subject || '').toUpperCase());
-
-            const isScience = codes.has('136') || codes.has('137') || codes.has('138') || codes.has('126') ||
-              subNames.some(s => s.includes('PHYSICS') || s.includes('CHEMISTRY') || s.includes('BIOLOGY') || s.includes('HIGHER MATHEMATICS'));
-
-            const isBusiness = codes.has('146') || codes.has('152') || codes.has('143') ||
-              subNames.some(s => s.includes('ACCOUNTING') || s.includes('FINANCE') || s.includes('BUSINESS'));
-
-            const isHumanities = codes.has('140') || codes.has('153') || codes.has('110') || codes.has('141') || codes.has('151') ||
-              subNames.some(s => s.includes('CIVICS') || s.includes('HISTORY') || s.includes('GEOGRAPHY') || s.includes('ECONOMICS'));
-
-            if (isScience) group = 'SCIENCE';
-            else if (isBusiness) group = 'BUSINESS STUDIES';
-            else if (isHumanities) group = 'HUMANITIES';
-            else group = 'OTHER';
-          } else {
-            group = 'OTHER';
-          }
-
-          // Subjects and grades list
-          let subjects = [];
-          let grades = {};
-          if (r.subjects && Array.isArray(r.subjects)) {
-            subjects = r.subjects;
-            r.subjects.forEach(s => {
-              if (s && s.subject) {
-                grades[s.subject] = s.grade || '';
-              }
-            });
-          } else if (r.grades && typeof r.grades === 'object') {
-            grades = r.grades;
-            Object.entries(r.grades).forEach(([sub, gr]) => {
-              subjects.push({ subject: sub, grade: gr });
-            });
-          }
-
-          allStudents.push({
-            name,
-            roll,
-            school,
-            district,
-            upazilla,
-            mark,
-            gpa,
-            status,
-            group,
-            grades,
-            subjects
-          });
-        });
-      });
-
-      rawData = allStudents;
+      if (!loadedFromPrecomputed) {
+        await loadFromManifestFallback();
+        setupData();
+      }
 
       if (rawData.length === 0) {
         showState('empty');
         return;
       }
-      
-      setupData();
+
       applyFilters();
-      
+
       // Event Listeners
       searchInput.addEventListener('input', handleFilterChange);
       btnSelectDistrict.addEventListener('click', () => openSelectionModal('district'));
@@ -326,11 +225,143 @@ document.addEventListener('DOMContentLoaded', () => {
       if (welcomeClose) {
         welcomeClose.addEventListener('click', closeWelcomeModal);
       }
-      
     } catch (error) {
       console.error('Error loading data:', error);
       showState('error');
     }
+  }
+
+  async function loadFromManifestFallback() {
+    const manifestResponse = await fetch('data/manifest.json');
+    if (!manifestResponse.ok) throw new Error('Failed to fetch manifest');
+    const files = await manifestResponse.json();
+
+    const requests = files.map(file => fetch(`data/${file}`).then(res => {
+      if (!res.ok) throw new Error(`Failed to fetch data/${file}`);
+      return res.json();
+    }));
+
+    const results = await Promise.all(requests);
+
+    const entityDiv = document.createElement('div');
+    const allStudents = [];
+
+    results.forEach(item => {
+      let fileDistrict = '';
+      let fileUpazilla = '';
+      let records = [];
+
+      if (Array.isArray(item)) {
+        records = item;
+      } else if (item && typeof item === 'object') {
+        fileDistrict = item.district || item.zilla || '';
+        fileUpazilla = item.upazilla || item.thana || '';
+        records = Array.isArray(item.records) ? item.records : [];
+      }
+
+      records.forEach(r => {
+        let name = r.name ? String(r.name).trim() : 'UNKNOWN';
+        entityDiv.innerHTML = name;
+        name = entityDiv.textContent || name;
+
+        let school = r.school || r.institution_name || 'UNKNOWN';
+        entityDiv.innerHTML = school;
+        school = entityDiv.textContent || school;
+
+        const roll = r.roll !== undefined && r.roll !== null ? String(r.roll).trim() : '';
+
+        let district = r.district || r.zilla || fileDistrict || '';
+        district = formatDistrictName(district);
+
+        let upazilla = r.upazilla || r.thana || fileUpazilla || '';
+        upazilla = formatUpazillaName(upazilla);
+
+        let mark = 0;
+        if (r.total_mark !== undefined && r.total_mark !== null) {
+          mark = parseInt(r.total_mark, 10) || 0;
+        } else if (r.mark !== undefined && r.mark !== null) {
+          mark = parseInt(r.mark, 10) || 0;
+        }
+
+        let gpa = 0.0;
+        let status = 'PASSED';
+        const rawGrade = r.grade !== undefined && r.grade !== null ? String(r.grade).trim().toUpperCase() : null;
+        const rawGpa = r.gpa !== undefined && r.gpa !== null ? parseFloat(r.gpa) : null;
+
+        if (rawGrade === 'FAIL' || r.status === 'FAILED') {
+          gpa = 0.0;
+          status = 'FAILED';
+        } else if (rawGpa !== null && !isNaN(rawGpa)) {
+          gpa = rawGpa;
+          status = r.status || (gpa > 0 ? 'PASSED' : 'FAILED');
+        } else if (rawGrade !== null) {
+          const parsed = parseFloat(rawGrade);
+          if (!isNaN(parsed)) {
+            gpa = parsed;
+            status = 'PASSED';
+          } else {
+            gpa = 0.0;
+            status = 'FAILED';
+          }
+        }
+
+        let group = '';
+        if (r.group && typeof r.group === 'string' && r.group.trim()) {
+          group = r.group.toUpperCase().trim();
+        } else if (r.subjects && Array.isArray(r.subjects) && r.subjects.length > 0) {
+          const codes = new Set(r.subjects.map(s => String(s.code || '').trim()));
+          const subNames = r.subjects.map(s => String(s.subject || '').toUpperCase());
+
+          const isScience = codes.has('136') || codes.has('137') || codes.has('138') || codes.has('126') ||
+            subNames.some(s => s.includes('PHYSICS') || s.includes('CHEMISTRY') || s.includes('BIOLOGY') || s.includes('HIGHER MATHEMATICS'));
+
+          const isBusiness = codes.has('146') || codes.has('152') || codes.has('143') ||
+            subNames.some(s => s.includes('ACCOUNTING') || s.includes('FINANCE') || s.includes('BUSINESS'));
+
+          const isHumanities = codes.has('140') || codes.has('153') || codes.has('110') || codes.has('141') || codes.has('151') ||
+            subNames.some(s => s.includes('CIVICS') || s.includes('HISTORY') || s.includes('GEOGRAPHY') || s.includes('ECONOMICS'));
+
+          if (isScience) group = 'SCIENCE';
+          else if (isBusiness) group = 'BUSINESS STUDIES';
+          else if (isHumanities) group = 'HUMANITIES';
+          else group = 'OTHER';
+        } else {
+          group = 'OTHER';
+        }
+
+        let subjects = [];
+        let grades = {};
+        if (r.subjects && Array.isArray(r.subjects)) {
+          subjects = r.subjects;
+          r.subjects.forEach(s => {
+            if (s && s.subject) {
+              grades[s.subject] = s.grade || '';
+            }
+          });
+        } else if (r.grades && typeof r.grades === 'object') {
+          grades = r.grades;
+          Object.entries(r.grades).forEach(([sub, gr]) => {
+            subjects.push({ subject: sub, grade: gr });
+          });
+        }
+
+        allStudents.push({
+          name,
+          roll,
+          school,
+          district,
+          upazilla,
+          mark,
+          gpa,
+          status,
+          group,
+          grades,
+          subjects
+        });
+      });
+    });
+
+    rawData = allStudents;
   }
 
   function setupData() {
@@ -879,7 +910,115 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 300);
   }
 
-  function openModal(student) {
+  async function getStudentSubjects(student) {
+    if (student.subjects && student.subjects.length > 0) return student.subjects;
+    if (!student.source_file) return [];
+
+    if (!detailFileCache.has(student.source_file)) {
+      try {
+        const res = await fetch(`data/${student.source_file}`);
+        if (res.ok) {
+          const json = await res.json();
+          const records = Array.isArray(json) ? json : (json.records || []);
+          const mapByRoll = new Map();
+          const mapByName = new Map();
+          records.forEach(r => {
+            if (r.roll) mapByRoll.set(String(r.roll).trim(), r.subjects || []);
+            if (r.name) mapByName.set(String(r.name).trim().toUpperCase(), r.subjects || []);
+          });
+          detailFileCache.set(student.source_file, { byRoll: mapByRoll, byName: mapByName });
+        } else {
+          detailFileCache.set(student.source_file, null);
+        }
+      } catch (e) {
+        console.warn('Failed to load student details:', e);
+        detailFileCache.set(student.source_file, null);
+      }
+    }
+
+    const cached = detailFileCache.get(student.source_file);
+    if (cached) {
+      const rollKey = String(student.roll || '').trim();
+      const nameKey = String(student.name || '').trim().toUpperCase();
+      student.subjects = (rollKey && cached.byRoll.get(rollKey)) || cached.byName.get(nameKey) || [];
+    } else {
+      student.subjects = [];
+    }
+    return student.subjects;
+  }
+
+  function renderModalGrades(subjects, grades) {
+    modalGrades.innerHTML = '';
+    let renderedCount = 0;
+
+    if (subjects && subjects.length > 0) {
+      for (const sub of subjects) {
+        const code = String(sub.code || '').trim();
+        const subName = String(sub.subject || '').toUpperCase().trim();
+        if (code === '147' || code === '156' || subName.includes('PHYSICAL EDUCATION') || subName.includes('CAREER EDUCATION')) {
+          continue;
+        }
+
+        let gradeColor = 'text-slate-700 bg-slate-100';
+        if (sub.grade === 'A+') gradeColor = 'text-emerald-700 bg-emerald-100';
+        else if (sub.grade === 'A') gradeColor = 'text-teal-700 bg-teal-100';
+        else if (sub.grade === 'A-') gradeColor = 'text-cyan-700 bg-cyan-100';
+        else if (sub.grade === 'B') gradeColor = 'text-blue-700 bg-blue-100';
+        else if (sub.grade === 'C') gradeColor = 'text-amber-700 bg-amber-100';
+        else if (sub.grade === 'D') gradeColor = 'text-orange-700 bg-orange-100';
+        else if (sub.grade === 'F') gradeColor = 'text-red-700 bg-red-100';
+
+        const markDisplay = sub.mark !== undefined && sub.mark !== null 
+          ? `<span class="text-xs font-bold text-slate-500 font-mono">${sub.mark}</span>` 
+          : '';
+
+        const row = document.createElement('div');
+        row.className = 'flex justify-between items-center py-1.5 px-3 bg-slate-50 rounded-lg border border-slate-100';
+        row.innerHTML = `
+          <span class="text-xs font-semibold text-slate-600 truncate mr-2" title="${escapeHTML(sub.subject)}">${escapeHTML(sub.subject)}</span>
+          <div class="flex items-center gap-2 shrink-0">
+            ${markDisplay}
+            ${sub.grade ? `<span class="inline-flex items-center justify-center px-2 py-0.5 rounded text-xs font-bold ${gradeColor}">${sub.grade}</span>` : ''}
+          </div>
+        `;
+        modalGrades.appendChild(row);
+        renderedCount++;
+      }
+    } else if (grades && Object.keys(grades).length > 0) {
+      for (const [subject, grade] of Object.entries(grades)) {
+        const subName = String(subject || '').toUpperCase().trim();
+        if (subName.includes('PHYSICAL EDUCATION') || subName.includes('CAREER EDUCATION')) {
+          continue;
+        }
+
+        let gradeColor = 'text-slate-700 bg-slate-100';
+        if (grade === 'A+') gradeColor = 'text-emerald-700 bg-emerald-100';
+        else if (grade === 'A') gradeColor = 'text-teal-700 bg-teal-100';
+        else if (grade === 'A-') gradeColor = 'text-cyan-700 bg-cyan-100';
+        else if (grade === 'B') gradeColor = 'text-blue-700 bg-blue-100';
+        else if (grade === 'C') gradeColor = 'text-amber-700 bg-amber-100';
+        else if (grade === 'D') gradeColor = 'text-orange-700 bg-orange-100';
+        else if (grade === 'F') gradeColor = 'text-red-700 bg-red-100';
+
+        const row = document.createElement('div');
+        row.className = 'flex justify-between items-center py-1.5 px-3 bg-slate-50 rounded-lg border border-slate-100';
+        row.innerHTML = `
+          <span class="text-xs font-semibold text-slate-600 truncate mr-2" title="${escapeHTML(subject)}">${escapeHTML(subject)}</span>
+          <span class="inline-flex items-center justify-center px-2 py-0.5 rounded text-xs font-bold shrink-0 ${gradeColor}">${grade}</span>
+        `;
+        modalGrades.appendChild(row);
+        renderedCount++;
+      }
+    }
+
+    if (renderedCount > 0) {
+      modalGradesSection.classList.remove('hidden');
+    } else {
+      modalGradesSection.classList.add('hidden');
+    }
+  }
+
+  async function openModal(student) {
     modalStudentHeader.classList.remove('hidden');
     modalStudentBody.classList.remove('hidden');
     modalSchoolsHeader.classList.add('hidden');
@@ -909,82 +1048,10 @@ document.addEventListener('DOMContentLoaded', () => {
       modalRollRow.classList.add('hidden');
       modalRollRow.classList.remove('flex');
     }
-    
-    if (student.subjects && student.subjects.length > 0) {
-      modalGrades.innerHTML = '';
-      let renderedCount = 0;
-      for (const sub of student.subjects) {
-        const code = String(sub.code || '').trim();
-        const subName = String(sub.subject || '').toUpperCase().trim();
-        if (code === '147' || code === '156' || subName.includes('PHYSICAL EDUCATION') || subName.includes('CAREER EDUCATION')) {
-          continue;
-        }
 
-        let gradeColor = 'text-slate-700 bg-slate-100';
-        if (sub.grade === 'A+') gradeColor = 'text-emerald-700 bg-emerald-100';
-        else if (sub.grade === 'A') gradeColor = 'text-teal-700 bg-teal-100';
-        else if (sub.grade === 'A-') gradeColor = 'text-cyan-700 bg-cyan-100';
-        else if (sub.grade === 'B') gradeColor = 'text-blue-700 bg-blue-100';
-        else if (sub.grade === 'C') gradeColor = 'text-amber-700 bg-amber-100';
-        else if (sub.grade === 'D') gradeColor = 'text-orange-700 bg-orange-100';
-        else if (sub.grade === 'F') gradeColor = 'text-red-700 bg-red-100';
-        
-        const markDisplay = sub.mark !== undefined && sub.mark !== null 
-          ? `<span class="text-xs font-bold text-slate-500 font-mono">${sub.mark}</span>` 
-          : '';
-
-        const row = document.createElement('div');
-        row.className = 'flex justify-between items-center py-1.5 px-3 bg-slate-50 rounded-lg border border-slate-100';
-        row.innerHTML = `
-          <span class="text-xs font-semibold text-slate-600 truncate mr-2" title="${escapeHTML(sub.subject)}">${escapeHTML(sub.subject)}</span>
-          <div class="flex items-center gap-2 shrink-0">
-            ${markDisplay}
-            ${sub.grade ? `<span class="inline-flex items-center justify-center px-2 py-0.5 rounded text-xs font-bold ${gradeColor}">${sub.grade}</span>` : ''}
-          </div>
-        `;
-        modalGrades.appendChild(row);
-        renderedCount++;
-      }
-      if (renderedCount > 0) {
-        modalGradesSection.classList.remove('hidden');
-      } else {
-        modalGradesSection.classList.add('hidden');
-      }
-    } else if (student.grades && Object.keys(student.grades).length > 0) {
-      modalGrades.innerHTML = '';
-      let renderedCount = 0;
-      for (const [subject, grade] of Object.entries(student.grades)) {
-        const subName = String(subject || '').toUpperCase().trim();
-        if (subName.includes('PHYSICAL EDUCATION') || subName.includes('CAREER EDUCATION')) {
-          continue;
-        }
-
-        let gradeColor = 'text-slate-700 bg-slate-100';
-        if (grade === 'A+') gradeColor = 'text-emerald-700 bg-emerald-100';
-        else if (grade === 'A') gradeColor = 'text-teal-700 bg-teal-100';
-        else if (grade === 'A-') gradeColor = 'text-cyan-700 bg-cyan-100';
-        else if (grade === 'B') gradeColor = 'text-blue-700 bg-blue-100';
-        else if (grade === 'C') gradeColor = 'text-amber-700 bg-amber-100';
-        else if (grade === 'D') gradeColor = 'text-orange-700 bg-orange-100';
-        else if (grade === 'F') gradeColor = 'text-red-700 bg-red-100';
-        
-        const row = document.createElement('div');
-        row.className = 'flex justify-between items-center py-1.5 px-3 bg-slate-50 rounded-lg border border-slate-100';
-        row.innerHTML = `
-          <span class="text-xs font-semibold text-slate-600 truncate mr-2" title="${escapeHTML(subject)}">${escapeHTML(subject)}</span>
-          <span class="inline-flex items-center justify-center px-2 py-0.5 rounded text-xs font-bold shrink-0 ${gradeColor}">${grade}</span>
-        `;
-        modalGrades.appendChild(row);
-        renderedCount++;
-      }
-      if (renderedCount > 0) {
-        modalGradesSection.classList.remove('hidden');
-      } else {
-        modalGradesSection.classList.add('hidden');
-      }
-    } else {
-      modalGradesSection.classList.add('hidden');
-    }
+    // Fetch and render subjects
+    const subjects = await getStudentSubjects(student);
+    renderModalGrades(subjects, student.grades);
 
     modal.classList.remove('hidden');
     setTimeout(() => {
