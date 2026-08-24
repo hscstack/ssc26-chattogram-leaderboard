@@ -1,0 +1,3899 @@
+{
+  "board": "CHATTOGRAM",
+  "district": "BANDARBAN",
+  "upazilla": "RAMU",
+  "upazilla_slug": "ramu",
+  "summary": {
+    "total_institutions": 1,
+    "total_records": 50,
+    "total_passed": 14,
+    "total_failed": 36,
+    "total_gpa_5": 0,
+    "last_updated": "2026-08-24 17:13:12"
+  },
+  "institutions": [
+    {
+      "eiin": "106377",
+      "name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "zilla": "BANDARBAN",
+      "thana": "RAMU",
+      "appeared": 50,
+      "passed": 14,
+      "gpa5": 0,
+      "pass_percentage": "28.00%",
+      "students_count": 50
+    }
+  ],
+  "records": [
+    {
+      "name": "MOHAMMAD SHAHED",
+      "roll": "129136",
+      "total_mark": 719,
+      "grade": "3.61",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 147,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 87,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 76,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "JESMIN AKTER",
+      "roll": "129130",
+      "total_mark": 812,
+      "grade": "4.44",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 152,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 85,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 76,
+          "grade": "A"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 84,
+          "grade": "A+"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 82,
+          "grade": "A+"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 84,
+          "grade": "A+"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 81,
+          "grade": "A+"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "HAMIDA BEGUM",
+      "roll": "129129",
+      "total_mark": 625,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 128,
+          "grade": "A-"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 80,
+          "grade": "A+"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 78,
+          "grade": "A"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "OVISHEK NATH",
+      "roll": "129137",
+      "total_mark": 732,
+      "grade": "3.78",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 152,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 88,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 83,
+          "grade": "A+"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "126",
+          "subject": "HIGHER MATHEMATICS",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MIFTAHUL JANNAT",
+      "roll": "129133",
+      "total_mark": 771,
+      "grade": "3.89",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 155,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 88,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 87,
+          "grade": "A+"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 77,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "126",
+          "subject": "HIGHER MATHEMATICS",
+          "mark": 77,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TAYRUL ADNAN TOFAIAT",
+      "roll": "129138",
+      "total_mark": 762,
+      "grade": "3.83",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 142,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 83,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 79,
+          "grade": "A"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 78,
+          "grade": "A"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 77,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 74,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SAKIRA",
+      "roll": "129131",
+      "total_mark": 789,
+      "grade": "4.22",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 156,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 81,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 70,
+          "grade": "A"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 85,
+          "grade": "A+"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 70,
+          "grade": "A"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 77,
+          "grade": "A"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 80,
+          "grade": "A+"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 80,
+          "grade": "A+"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ZANNATUL WHAKIA",
+      "roll": "129132",
+      "total_mark": 525,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 99,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MD ABDULLAH",
+      "roll": "129135",
+      "total_mark": 689,
+      "grade": "3.44",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 152,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 84,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 79,
+          "grade": "A"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TAHSINA AFRIN RIA",
+      "roll": "129134",
+      "total_mark": 636,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 133,
+          "grade": "A-"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 82,
+          "grade": "A+"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "NIROB SHARMA",
+      "roll": "129139",
+      "total_mark": 706,
+      "grade": "3.67",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 130,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 97,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 74,
+          "grade": "A"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 80,
+          "grade": "A+"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "126",
+          "subject": "HIGHER MATHEMATICS",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 95,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MUSHRAT JAHAN MONNI",
+      "roll": "326582",
+      "total_mark": 499,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 111,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "NAJMA KHANAM",
+      "roll": "326584",
+      "total_mark": 643,
+      "grade": "3.17",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 112,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 68,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 76,
+          "grade": "A"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 44,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "UMME SALMA",
+      "roll": "326583",
+      "total_mark": 463,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 95,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SIRISTY RANI DAS PUJA",
+      "roll": "326585",
+      "total_mark": 455,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 95,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SANJIDA",
+      "roll": "326586",
+      "total_mark": 478,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 100,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "NASRIN JAHAN",
+      "roll": "326588",
+      "total_mark": 371,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 77,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SAHINA SULTANA TAJIM",
+      "roll": "326590",
+      "total_mark": 681,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 158,
+          "grade": "A"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 80,
+          "grade": "A+"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 85,
+          "grade": "A+"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHAMINA YEASMIN",
+      "roll": "326589",
+      "total_mark": 445,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 109,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 43,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "AIMON AFIFA EVRA",
+      "roll": "326592",
+      "total_mark": 407,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 85,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "AFIFA AKTER",
+      "roll": "326594",
+      "total_mark": 397,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 105,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TASLIMA AKTER",
+      "roll": "326600",
+      "total_mark": 421,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 82,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 90,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SANJIDA SULATANA",
+      "roll": "326593",
+      "total_mark": 537,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 97,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 44,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "FARZANA YESMIN JUSNA",
+      "roll": "326596",
+      "total_mark": 450,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 107,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "NAYEEMA AKTER",
+      "roll": "326587",
+      "total_mark": 434,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 105,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MORJIA KHANAM",
+      "roll": "326601",
+      "total_mark": 327,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 71,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 47,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHIFA AKTER",
+      "roll": "326591",
+      "total_mark": 508,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 115,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "JAFRIN AFROZA",
+      "roll": "326597",
+      "total_mark": 556,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 108,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 73,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 98,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MUSLIMA JANNAT",
+      "roll": "326602",
+      "total_mark": 397,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 84,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 90,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHAHADAT HOSEN SAKIB",
+      "roll": "326604",
+      "total_mark": 758,
+      "grade": "4.00",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 138,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 78,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 87,
+          "grade": "A+"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 80,
+          "grade": "A+"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "RUMI AKTAR",
+      "roll": "326595",
+      "total_mark": 552,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 116,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 81,
+          "grade": "A+"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "NAZRUL ISLAM",
+      "roll": "326606",
+      "total_mark": 411,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 104,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 45,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "FARJANA SULTANA MONMON",
+      "roll": "326603",
+      "total_mark": 484,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 86,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 72,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 92,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 44,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MD PARVEJ",
+      "roll": "326605",
+      "total_mark": 527,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 112,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 70,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "JOYANTY SHARMA",
+      "roll": "326598",
+      "total_mark": 478,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 95,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 95,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 44,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TAZMINA AKTER",
+      "roll": "326599",
+      "total_mark": 519,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 84,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 74,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 92,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MD MOHE UDDIN",
+      "roll": "326608",
+      "total_mark": 431,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 91,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 92,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHAHADAT HOSEN",
+      "roll": "326607",
+      "total_mark": 389,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 93,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 90,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "URMILA DHAR",
+      "roll": "537405",
+      "total_mark": 398,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 99,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 95,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SANIKA UMRIN URBANA",
+      "roll": "537400",
+      "total_mark": 730,
+      "grade": "4.11",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 160,
+          "grade": "A+"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 105,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 82,
+          "grade": "A+"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 87,
+          "grade": "A+"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 77,
+          "grade": "A"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 78,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 47,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "AL HASAN SAKIB CHOWDHURY",
+      "roll": "537412",
+      "total_mark": 457,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 119,
+          "grade": "A-"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ATAUR RAHMAN",
+      "roll": "537413",
+      "total_mark": 483,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 117,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 47,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "HABIB ULLAH",
+      "roll": "537408",
+      "total_mark": 456,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 100,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "PARVEZ ANOWAR",
+      "roll": "537414",
+      "total_mark": 561,
+      "grade": "3.00",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 112,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 69,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TARINA SULTANA",
+      "roll": "537401",
+      "total_mark": 533,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 128,
+          "grade": "A-"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 76,
+          "grade": "A"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHARMIN ISLAM",
+      "roll": "537399",
+      "total_mark": 550,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 134,
+          "grade": "A-"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 78,
+          "grade": "A"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 84,
+          "grade": "A+"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MISBAH UDDIN",
+      "roll": "537406",
+      "total_mark": 586,
+      "grade": "3.17",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 130,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 70,
+          "grade": "A"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ABDULLAH AL FAISAL",
+      "roll": "537407",
+      "total_mark": 338,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 99,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHOYAIBUL ISLAM",
+      "roll": "537410",
+      "total_mark": 620,
+      "grade": "3.44",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 145,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 69,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 74,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MD SAZEDUL ISLAM",
+      "roll": "537411",
+      "total_mark": 446,
+      "grade": "FAIL",
+      "institution_name": "GARJANIA HIGH SCHOOL, BANDARBAN",
+      "institution_eiin": "106377",
+      "zilla": "BANDARBAN",
+      "upazilla": "RAMU",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 104,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    }
+  ]
+}

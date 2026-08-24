@@ -193,7 +193,7 @@ def scan_archive() -> dict:
         return archive_schools
 
     for json_file in sorted(ARCHIVE_DIR.rglob("*.json")):
-        if json_file.name.startswith("."):
+        if json_file.name in EXCLUDED_FILENAMES or json_file.name.startswith("."):
             continue
         rel_path = str(json_file.relative_to(BASE_DIR))
         try:
