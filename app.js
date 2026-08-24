@@ -912,7 +912,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (student.subjects && student.subjects.length > 0) {
       modalGrades.innerHTML = '';
+      let renderedCount = 0;
       for (const sub of student.subjects) {
+        const code = String(sub.code || '').trim();
+        const subName = String(sub.subject || '').toUpperCase().trim();
+        if (code === '147' || code === '156' || subName.includes('PHYSICAL EDUCATION') || subName.includes('CAREER EDUCATION')) {
+          continue;
+        }
+
         let gradeColor = 'text-slate-700 bg-slate-100';
         if (sub.grade === 'A+') gradeColor = 'text-emerald-700 bg-emerald-100';
         else if (sub.grade === 'A') gradeColor = 'text-teal-700 bg-teal-100';
@@ -936,11 +943,22 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         `;
         modalGrades.appendChild(row);
+        renderedCount++;
       }
-      modalGradesSection.classList.remove('hidden');
+      if (renderedCount > 0) {
+        modalGradesSection.classList.remove('hidden');
+      } else {
+        modalGradesSection.classList.add('hidden');
+      }
     } else if (student.grades && Object.keys(student.grades).length > 0) {
       modalGrades.innerHTML = '';
+      let renderedCount = 0;
       for (const [subject, grade] of Object.entries(student.grades)) {
+        const subName = String(subject || '').toUpperCase().trim();
+        if (subName.includes('PHYSICAL EDUCATION') || subName.includes('CAREER EDUCATION')) {
+          continue;
+        }
+
         let gradeColor = 'text-slate-700 bg-slate-100';
         if (grade === 'A+') gradeColor = 'text-emerald-700 bg-emerald-100';
         else if (grade === 'A') gradeColor = 'text-teal-700 bg-teal-100';
@@ -957,8 +975,13 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="inline-flex items-center justify-center px-2 py-0.5 rounded text-xs font-bold shrink-0 ${gradeColor}">${grade}</span>
         `;
         modalGrades.appendChild(row);
+        renderedCount++;
       }
-      modalGradesSection.classList.remove('hidden');
+      if (renderedCount > 0) {
+        modalGradesSection.classList.remove('hidden');
+      } else {
+        modalGradesSection.classList.add('hidden');
+      }
     } else {
       modalGradesSection.classList.add('hidden');
     }
