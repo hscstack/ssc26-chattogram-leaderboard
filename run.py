@@ -516,11 +516,24 @@ def main():
     parser.add_argument("eiins", nargs="*", help="EIIN(s) to add (or 'all' / 'list')")
     parser.add_argument("--list", "-l", action="store_true", help="List all available schools in archive")
     parser.add_argument("--all", "-a", action="store_true", help="Add all available schools from archive")
+    parser.add_argument("--ui", "--server", action="store_true", help="Launch the local Admin Web UI in browser")
+    parser.add_argument("--port", "-p", type=int, default=5000, help="Port for the Admin Web UI (default: 5000)")
     parser.add_argument("--no-push", action="store_true", help="Do not run git push")
     parser.add_argument("--no-git", action="store_true", help="Do not run any git commands")
     parser.add_argument("-m", "--message", type=str, help="Custom git commit message", default=None)
 
     args = parser.parse_args()
+
+    # Handle --ui / --server
+    if args.ui:
+        try:
+            import admin_server
+            admin_server.start_server(port=args.port, open_browser=True)
+            return
+        except ImportError:
+            server_script = BASE_DIR / "admin_server.py"
+            subprocess.run([sys.executable, str(server_script), "--port", str(args.port)], cwd=str(BASE_DIR))
+            return
 
     existing_eiins, existing_rolls = scan_existing_data()
     archive_schools = scan_archive()
