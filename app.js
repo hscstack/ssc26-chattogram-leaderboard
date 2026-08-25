@@ -162,11 +162,23 @@ document.addEventListener('DOMContentLoaded', () => {
       searchInput.addEventListener('click', handleSearchFocusOrClick);
       searchInput.addEventListener('focus', handleSearchFocusOrClick);
       searchInput.addEventListener('input', handleSearchInput);
-      btnSelectDistrict.addEventListener('click', () => openSelectionModal('district'));
+      btnSelectDistrict.addEventListener('click', async () => {
+        const auth = await checkUserAuth();
+        if (!auth) return openAuthModal();
+        openSelectionModal('district');
+      });
       if (btnSelectUpazilla) {
-        btnSelectUpazilla.addEventListener('click', () => openSelectionModal('upazilla'));
+        btnSelectUpazilla.addEventListener('click', async () => {
+          const auth = await checkUserAuth();
+          if (!auth) return openAuthModal();
+          openSelectionModal('upazilla');
+        });
       }
-      btnSelectSchool.addEventListener('click', () => openSelectionModal('school'));
+      btnSelectSchool.addEventListener('click', async () => {
+        const auth = await checkUserAuth();
+        if (!auth) return openAuthModal();
+        openSelectionModal('school');
+      });
       btnSelectGroup.addEventListener('click', () => openSelectionModal('group'));
 
       if (authModalClose) {
