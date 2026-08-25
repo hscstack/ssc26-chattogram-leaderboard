@@ -74,7 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const welcomeModalInner = document.getElementById('welcome-modal-inner');
   const welcomeClose = document.getElementById('welcome-close');
 
+  const authModal = document.getElementById('auth-modal');
+  const authModalInner = document.getElementById('auth-modal-inner');
+  const authModalClose = document.getElementById('auth-modal-close');
+  const authLoginBtn = document.getElementById('auth-login-btn');
+
   // State
+  let isLoggedIn = null;
   let rawData = [];
   let filteredData = [];
   let currentPage = 1;
@@ -153,13 +159,29 @@ document.addEventListener('DOMContentLoaded', () => {
       applyFilters();
 
       // Event Listeners
-      searchInput.addEventListener('input', handleFilterChange);
+      searchInput.addEventListener('click', handleSearchFocusOrClick);
+      searchInput.addEventListener('focus', handleSearchFocusOrClick);
+      searchInput.addEventListener('input', handleSearchInput);
       btnSelectDistrict.addEventListener('click', () => openSelectionModal('district'));
       if (btnSelectUpazilla) {
         btnSelectUpazilla.addEventListener('click', () => openSelectionModal('upazilla'));
       }
       btnSelectSchool.addEventListener('click', () => openSelectionModal('school'));
       btnSelectGroup.addEventListener('click', () => openSelectionModal('group'));
+
+      if (authModalClose) {
+        authModalClose.addEventListener('click', closeAuthModal);
+      }
+      if (authModal) {
+        authModal.addEventListener('click', (e) => {
+          if (e.target === authModal) closeAuthModal();
+        });
+      }
+      if (authLoginBtn) {
+        authLoginBtn.addEventListener('click', () => {
+          window.location.href = 'https://hscstack.site/login?redirect=' + encodeURIComponent(window.location.href);
+        });
+      }
 
       selectionModalClose.addEventListener('click', closeSelectionModal);
       selectionModal.addEventListener('click', (e) => {
@@ -421,6 +443,66 @@ document.addEventListener('DOMContentLoaded', () => {
     upazillasList = Array.from(uniqueUpazillas).sort();
     schoolsList = Array.from(uniqueSchools).sort();
     groupsList = Array.from(uniqueGroups).sort();
+  }
+
+  async function checkUserAuth() {
+    if (isLoggedIn !== null) return isLoggedIn;
+    try {
+      const res = await fetch('https://hscstack.site/api/auth/status', {
+        method: 'GET',
+        credentials: 'include'
+      });
+      if (res.ok) {
+        const data = await res.json();
+        isLoggedIn = Boolean(data.authenticated);
+      } else {
+        isLoggedIn = false;
+      }
+    } catch (e) {
+      isLoggedIn = false;
+    }
+    return isLoggedIn;
+  }
+
+  function openAuthModal() {
+    if (!authModal) return;
+    authModal.classList.remove('hidden');
+    setTimeout(() => {
+      authModal.classList.add('opacity-100');
+      authModal.classList.remove('opacity-0', 'pointer-events-none');
+      authModalInner.classList.remove('scale-95', 'translate-y-8');
+      authModalInner.classList.add('scale-100', 'translate-y-0');
+    }, 10);
+  }
+
+  function closeAuthModal() {
+    if (!authModal) return;
+    authModal.classList.remove('opacity-100');
+    authModal.classList.add('opacity-0', 'pointer-events-none');
+    authModalInner.classList.add('scale-95', 'translate-y-8');
+    authModalInner.classList.remove('scale-100', 'translate-y-0');
+    setTimeout(() => {
+      authModal.classList.add('hidden');
+    }, 300);
+  }
+
+  async function handleSearchFocusOrClick() {
+    const authenticated = await checkUserAuth();
+    if (!authenticated) {
+      searchInput.blur();
+      openAuthModal();
+    }
+  }
+
+  async function handleSearchInput() {
+    const authenticated = await checkUserAuth();
+    if (!authenticated) {
+      searchInput.value = '';
+      searchInput.blur();
+      openAuthModal();
+      return;
+    }
+    handleFilterChange();
   }
 
   function handleFilterChange() {
