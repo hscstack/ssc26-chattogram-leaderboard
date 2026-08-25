@@ -1,0 +1,4247 @@
+{
+  "board": "CHATTOGRAM",
+  "district": "KHAGRACHHARI",
+  "upazilla": "GUIMARA",
+  "upazilla_slug": "guimara",
+  "summary": {
+    "total_institutions": 1,
+    "total_records": 65,
+    "total_passed": 13,
+    "total_failed": 52,
+    "total_gpa_5": 0,
+    "last_updated": "2026-08-25 11:14:32"
+  },
+  "institutions": [
+    {
+      "eiin": "139724",
+      "name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "zilla": "KHAGRACHHARI",
+      "thana": "GUIMARA",
+      "appeared": 65,
+      "passed": 13,
+      "gpa5": 0,
+      "pass_percentage": "20.00%",
+      "students_count": 65
+    }
+  ],
+  "records": [
+    {
+      "name": "UKYAMONG MARMA",
+      "roll": "128756",
+      "total_mark": 408,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 76,
+          "grade": "D"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 71,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 50,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 50,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ADHORSI CHAKMA",
+      "roll": "128752",
+      "total_mark": 788,
+      "grade": "4.17",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 146,
+          "grade": "A"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 74,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 77,
+          "grade": "A"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 76,
+          "grade": "A"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 83,
+          "grade": "A+"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 74,
+          "grade": "A"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 82,
+          "grade": "A+"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 50,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 50,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "KRANYOBAI MARMA",
+      "roll": "128753",
+      "total_mark": 542,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 111,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 50,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 50,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "UMAPRU MARMA",
+      "roll": "128754",
+      "total_mark": 158,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 50,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SWEETY TRIPURA",
+      "roll": "128755",
+      "total_mark": 769,
+      "grade": "4.00",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 123,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 94,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "150",
+          "subject": "BANGLADESH AND GLOBAL STUDIES",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 86,
+          "grade": "A+"
+        },
+        {
+          "code": "136",
+          "subject": "PHYSICS",
+          "mark": 77,
+          "grade": "A"
+        },
+        {
+          "code": "137",
+          "subject": "CHEMISTRY",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "138",
+          "subject": "BIOLOGY",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "126",
+          "subject": "HIGHER MATHEMATICS",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 50,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 50,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "REMI CHAKMA",
+      "roll": "325569",
+      "total_mark": 373,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 72,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 45,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 33,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MRASAINDA MARMA",
+      "roll": "325568",
+      "total_mark": 343,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 75,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 43,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 46,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SAFALI MARMA",
+      "roll": "325575",
+      "total_mark": 399,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 81,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SUNITA CHAKMA",
+      "roll": "325571",
+      "total_mark": 342,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 75,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TAPONA CHAKMA",
+      "roll": "325572",
+      "total_mark": 438,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 92,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 79,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 45,
+          "grade": "C"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 50,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 50,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "NANCHINGBAI MARMA",
+      "roll": "325570",
+      "total_mark": 226,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 32,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 49,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "RUIAONGKRA MARMA",
+      "roll": "325576",
+      "total_mark": 218,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 31,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ATHUIMA MARMA",
+      "roll": "325577",
+      "total_mark": 315,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 79,
+          "grade": "C"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 33,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "RISA CHAKMA",
+      "roll": "325573",
+      "total_mark": 350,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 77,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 79,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MILIPRU MARMA",
+      "roll": "325579",
+      "total_mark": 395,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 74,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 77,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 32,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "PULU MARMA",
+      "roll": "325578",
+      "total_mark": 328,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 73,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 32,
+          "grade": "A-"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MEMACHING MOGH",
+      "roll": "325580",
+      "total_mark": 421,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 89,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SHAMA MOGINI",
+      "roll": "325581",
+      "total_mark": 188,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "AONGKRAYNO MARMA",
+      "roll": "325574",
+      "total_mark": 107,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MYAMACHING MARMA",
+      "roll": "325583",
+      "total_mark": 283,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 79,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 45,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 31,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 43,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MASUINU MARMA",
+      "roll": "325585",
+      "total_mark": 291,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 77,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 47,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "CHINGMRAYO MARMA",
+      "roll": "325587",
+      "total_mark": 189,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "NAIU MARMA",
+      "roll": "325584",
+      "total_mark": 171,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 42,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 47,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "RANGMRASONG MARMA",
+      "roll": "325582",
+      "total_mark": 249,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 70,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 30,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "name": "CHAIWAPRU MARMA",
+      "roll": "325588",
+      "total_mark": 167,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ATUBAI MARMA",
+      "roll": "325589",
+      "total_mark": 493,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 76,
+          "grade": "D"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "TOMALIKA TRIPURA",
+      "roll": "325595",
+      "total_mark": 556,
+      "grade": "2.39",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 87,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 75,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 32,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MRACHINGNU MARMA",
+      "roll": "325591",
+      "total_mark": 207,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SUSMITA TRIPURA",
+      "roll": "325596",
+      "total_mark": 284,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 33,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "PAIMRACHING MARMA",
+      "roll": "325592",
+      "total_mark": 271,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "KRAJAIRI MARMA",
+      "roll": "325586",
+      "total_mark": 304,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "KROINEW MARMA",
+      "roll": "325590",
+      "total_mark": 233,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 45,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "UPOMA TRIPURA",
+      "roll": "325597",
+      "total_mark": 629,
+      "grade": "2.94",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 93,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 68,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 91,
+          "grade": "A+"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "RAHIMA AKTER SWEETIE",
+      "roll": "325599",
+      "total_mark": 496,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 82,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "111",
+          "subject": "ISLAM AND MORAL EDUCATION",
+          "mark": 74,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "UMRACHING CHAKMA",
+      "roll": "325593",
+      "total_mark": 454,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 77,
+          "grade": "D"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 78,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 32,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "RIPONA DEBI TRIPURA",
+      "roll": "325600",
+      "total_mark": 555,
+      "grade": "2.39",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 73,
+          "grade": "D"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 88,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 70,
+          "grade": "A"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "AONGMRA MARMA",
+      "roll": "325598",
+      "total_mark": 542,
+      "grade": "2.39",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 88,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 47,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "URMITA TRIPURA",
+      "roll": "325601",
+      "total_mark": 267,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 75,
+          "grade": "D"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 42,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "MYAMACHING MARMA",
+      "roll": "325594",
+      "total_mark": 255,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 68,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 32,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 41,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SAPRU MARMA",
+      "roll": "325603",
+      "total_mark": 106,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "APAN BIKASH TRIPURA",
+      "roll": "325605",
+      "total_mark": 272,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 68,
+          "grade": "D"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ABRESAI MARMA",
+      "roll": "325609",
+      "total_mark": 528,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 91,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 71,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 86,
+          "grade": "A+"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SABAI MARMA",
+      "roll": "325604",
+      "total_mark": 132,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 33,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "LOKHNA TRIPURA",
+      "roll": "325602",
+      "total_mark": 101,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 37,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "name": "APRUMONG MARMA",
+      "roll": "325608",
+      "total_mark": 717,
+      "grade": "3.50",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 120,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 94,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 85,
+          "grade": "A+"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 80,
+          "grade": "A+"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 44,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SUPAL BIKASH TRIPURA",
+      "roll": "325607",
+      "total_mark": 559,
+      "grade": "2.67",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 88,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 67,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 46,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SUICHING MARMA",
+      "roll": "325611",
+      "total_mark": 326,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 78,
+          "grade": "D"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "KYACHINGNU MARMA",
+      "roll": "325615",
+      "total_mark": 175,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 33,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "name": "APUL BIKASH TRIPURA",
+      "roll": "325606",
+      "total_mark": 115,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 32,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 38,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "name": "UGYAPRU MARMA",
+      "roll": "325612",
+      "total_mark": 311,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 69,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "AONGKYACHING MARMA",
+      "roll": "325610",
+      "total_mark": 361,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 74,
+          "grade": "D"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 33,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "THOIU MARMA",
+      "roll": "325616",
+      "total_mark": 212,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 38,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 30,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "name": "MYAMONGSI MARMA",
+      "roll": "325617",
+      "total_mark": 168,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 39,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 30,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "name": "USHEPRU MARMA",
+      "roll": "325613",
+      "total_mark": 285,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 68,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 33,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 44,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 35,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 43,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "AONGHLACHING MARMA",
+      "roll": "325619",
+      "total_mark": 223,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 38,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 49,
+          "grade": "C"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "RUIPRUSAI MARMA",
+      "roll": "325618",
+      "total_mark": 647,
+      "grade": "3.22",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 126,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 73,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 87,
+          "grade": "A+"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 50,
+          "grade": "B"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 37,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 61,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 50,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 50,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ASHRAM TRIPURA",
+      "roll": "325620",
+      "total_mark": 508,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 96,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 35,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 68,
+          "grade": "A-"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "153",
+          "subject": "HISTORY OF BANGLADESH AND WORLD CIVILIZATION",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "UHLAPRUE MARMA",
+      "roll": "325614",
+      "total_mark": 236,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "110",
+          "subject": "GEOGRAPHY AND ENVIRONMENT",
+          "mark": 41,
+          "grade": "C"
+        },
+        {
+          "code": "140",
+          "subject": "CIVICS AND CITIZENSHIP",
+          "mark": 53,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 31,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 30,
+          "grade": "A-"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 38,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "name": "RAMRAU MARMA",
+      "roll": "537075",
+      "total_mark": 548,
+      "grade": "2.78",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 90,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 77,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 34,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 63,
+          "grade": "A-"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 55,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 64,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "SUBAL CHAKMA",
+      "roll": "537080",
+      "total_mark": 671,
+      "grade": "3.67",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 111,
+          "grade": "B"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 108,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 73,
+          "grade": "A"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 89,
+          "grade": "A+"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 47,
+          "grade": "C"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 58,
+          "grade": "B"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 72,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 74,
+          "grade": "A"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 50,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 50,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "THUISAJAI MARMA",
+      "roll": "537086",
+      "total_mark": 493,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 92,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 46,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 36,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 60,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ANEL KUMAR TRIPURA",
+      "roll": "537089",
+      "total_mark": 620,
+      "grade": "3.44",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 124,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 69,
+          "grade": "D"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 36,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 85,
+          "grade": "A+"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 91,
+          "grade": "A+"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 43,
+          "grade": "C"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 62,
+          "grade": "A-"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 41,
+          "grade": "A+"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 69,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 48,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 48,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "ALKESH TRIPURA",
+      "roll": "537090",
+      "total_mark": 702,
+      "grade": "4.06",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 128,
+          "grade": "A-"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 91,
+          "grade": "C"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 66,
+          "grade": "A-"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 91,
+          "grade": "A+"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 97,
+          "grade": "A+"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 52,
+          "grade": "B"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 82,
+          "grade": "A+"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 71,
+          "grade": "A"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 39,
+          "grade": "A"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 67,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 42,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 40,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "CHAISAU MARMA",
+      "roll": "537087",
+      "total_mark": 451,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 95,
+          "grade": "C"
+        },
+        {
+          "code": "107",
+          "subject": "ENGLISH-I",
+          "mark": 66,
+          "grade": "D"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 51,
+          "grade": "B"
+        },
+        {
+          "code": "113",
+          "subject": "BUDDHIST RELIGION AND MORAL EDUCATION",
+          "mark": 56,
+          "grade": "B"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 48,
+          "grade": "C"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 45,
+          "grade": "C"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 33,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 57,
+          "grade": "B"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 40,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 45,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "name": "RISE TRIPURA",
+      "roll": "537091",
+      "total_mark": 518,
+      "grade": "FAIL",
+      "institution_name": "DEBOLCHHARI BAZAR PARA HIGH SCHOOL, KHAGRACHHARI",
+      "institution_eiin": "139724",
+      "zilla": "KHAGRACHHARI",
+      "upazilla": "GUIMARA",
+      "subjects": [
+        {
+          "code": "101",
+          "subject": "BANGLA-I",
+          "mark": 113,
+          "grade": "B"
+        },
+        {
+          "code": "109",
+          "subject": "MATHEMATICS",
+          "mark": 40,
+          "grade": "C"
+        },
+        {
+          "code": "127",
+          "subject": "SCIENCE",
+          "mark": 78,
+          "grade": "A"
+        },
+        {
+          "code": "112",
+          "subject": "HINDU RELIGION AND MORAL EDUCATION",
+          "mark": 75,
+          "grade": "A"
+        },
+        {
+          "code": "146",
+          "subject": "ACCOUNTING",
+          "mark": 54,
+          "grade": "B"
+        },
+        {
+          "code": "152",
+          "subject": "FINANCE AND BANKING",
+          "mark": 37,
+          "grade": "D"
+        },
+        {
+          "code": "143",
+          "subject": "BUSINESS ENTREPRENEURSHIP",
+          "mark": 59,
+          "grade": "B"
+        },
+        {
+          "code": "154",
+          "subject": "Information And Communication Technology",
+          "mark": 34,
+          "grade": "A-"
+        },
+        {
+          "code": "134",
+          "subject": "AGRICULTURE STUDIES",
+          "mark": 65,
+          "grade": "A-"
+        },
+        {
+          "code": "147",
+          "subject": "PHYSICAL EDUCATION, HEALTH AND SPORTS",
+          "mark": 45,
+          "grade": "A+"
+        },
+        {
+          "code": "156",
+          "subject": "Career Education",
+          "mark": 47,
+          "grade": "A+"
+        }
+      ]
+    }
+  ]
+}
