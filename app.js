@@ -139,12 +139,12 @@ document.addEventListener('DOMContentLoaded', () => {
   init();
 
   async function init() {
-    checkUserAuth();
     try {
       let loadedFromPrecomputed = false;
 
       try {
-        const [metaRes, rankedRes] = await Promise.all([
+        const [, metaRes, rankedRes] = await Promise.all([
+          checkUserAuth(),
           fetch('data/metadata.json'),
           fetch('data/leaderboard_ranked.json')
         ]);
@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (!loadedFromPrecomputed) {
+        await checkUserAuth();
         await loadFromManifestFallback();
         setupData();
       }
@@ -185,21 +186,18 @@ document.addEventListener('DOMContentLoaded', () => {
       searchInput.addEventListener('click', handleSearchFocusOrClick);
       searchInput.addEventListener('focus', handleSearchFocusOrClick);
       searchInput.addEventListener('input', handleSearchInput);
-      btnSelectDistrict.addEventListener('click', async () => {
-        const auth = await checkUserAuth();
-        if (!auth) return openAuthModal();
+      btnSelectDistrict.addEventListener('click', () => {
+        if (isLoggedIn === false) return openAuthModal();
         openSelectionModal('district');
       });
       if (btnSelectUpazilla) {
-        btnSelectUpazilla.addEventListener('click', async () => {
-          const auth = await checkUserAuth();
-          if (!auth) return openAuthModal();
+        btnSelectUpazilla.addEventListener('click', () => {
+          if (isLoggedIn === false) return openAuthModal();
           openSelectionModal('upazilla');
         });
       }
-      btnSelectSchool.addEventListener('click', async () => {
-        const auth = await checkUserAuth();
-        if (!auth) return openAuthModal();
+      btnSelectSchool.addEventListener('click', () => {
+        if (isLoggedIn === false) return openAuthModal();
         openSelectionModal('school');
       });
       btnSelectGroup.addEventListener('click', () => openSelectionModal('group'));
@@ -675,17 +673,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 300);
   }
 
-  async function handleSearchFocusOrClick() {
-    const authenticated = await checkUserAuth();
-    if (!authenticated) {
+  function handleSearchFocusOrClick() {
+    if (isLoggedIn === false) {
       searchInput.blur();
       openAuthModal();
     }
   }
 
-  async function handleSearchInput() {
-    const authenticated = await checkUserAuth();
-    if (!authenticated) {
+  function handleSearchInput() {
+    if (isLoggedIn === false) {
       searchInput.value = '';
       searchInput.blur();
       openAuthModal();
