@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pageTitleText = document.getElementById('page-title-text');
 
   const takedownBtn = document.getElementById('takedown-btn');
+  const drawerTakedownBtn = document.getElementById('drawer-takedown-btn');
   const takedownModal = document.getElementById('takedown-modal');
   const takedownModalInner = document.getElementById('takedown-modal-inner');
   const takedownClose = document.getElementById('takedown-close');
@@ -78,6 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const authModalInner = document.getElementById('auth-modal-inner');
   const authModalClose = document.getElementById('auth-modal-close');
   const authLoginBtn = document.getElementById('auth-login-btn');
+
+  // Mobile Drawer Elements
+  const mobileDrawerToggle = document.getElementById('mobile-drawer-toggle');
+  const mobileDrawer = document.getElementById('mobile-drawer');
+  const mobileDrawerBackdrop = document.getElementById('mobile-drawer-backdrop');
+  const mobileDrawerPanel = document.getElementById('mobile-drawer-panel');
+  const mobileDrawerClose = document.getElementById('mobile-drawer-close');
 
   const AUTH_STORAGE_KEY = 'hscstack_auth_user';
 
@@ -226,6 +234,17 @@ document.addEventListener('DOMContentLoaded', () => {
       statSchoolsContainer.addEventListener('click', showSchoolsModal);
       statDistrictsContainer.addEventListener('click', showDistrictsModal);
 
+      // Mobile Drawer Listeners
+      if (mobileDrawerToggle) {
+        mobileDrawerToggle.addEventListener('click', openMobileDrawer);
+      }
+      if (mobileDrawerClose) {
+        mobileDrawerClose.addEventListener('click', closeMobileDrawer);
+      }
+      if (mobileDrawerBackdrop) {
+        mobileDrawerBackdrop.addEventListener('click', closeMobileDrawer);
+      }
+
       // Modal Close
       modalClose.addEventListener('click', closeModal);
       modal.addEventListener('click', (e) => {
@@ -233,6 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
+          if (mobileDrawer && !mobileDrawer.classList.contains('hidden')) closeMobileDrawer();
           if (!modal.classList.contains('hidden')) closeModal();
           if (takedownModal && !takedownModal.classList.contains('hidden')) closeTakedownModal();
           if (newSchoolModal && !newSchoolModal.classList.contains('hidden')) closeNewSchoolModal();
@@ -246,6 +266,15 @@ document.addEventListener('DOMContentLoaded', () => {
         takedownBtn.addEventListener('click', (e) => {
           e.preventDefault();
           openTakedownModal();
+        });
+      }
+      if (drawerTakedownBtn) {
+        drawerTakedownBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          closeMobileDrawer();
+          setTimeout(() => {
+            openTakedownModal();
+          }, 50);
         });
       }
       if (takedownClose) {
@@ -538,28 +567,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderUserProfileWidget() {
     const container = document.getElementById('user-profile-widget');
-    if (!container) return;
+    const bottomNavAccount = document.getElementById('bottom-nav-account');
+    const bottomNavIcon = document.getElementById('bottom-nav-account-icon');
+    const bottomNavLabel = document.getElementById('bottom-nav-account-label');
+    const drawerAccountLink = document.getElementById('drawer-account-link');
+    const drawerAccountLabel = document.getElementById('drawer-account-label');
 
     if (!isLoggedIn || !currentUser) {
-      container.innerHTML = `
-        <button
-          type="button"
-          id="top-profile-login-btn"
-          class="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all hover:bg-slate-800 hover:shadow-md active:scale-95"
-        >
-          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
-            <polyline points="10 17 15 12 10 7"/>
-            <line x1="15" y1="12" x2="3" y2="12"/>
-          </svg>
-          <span>Login</span>
-        </button>
-      `;
-      const btn = document.getElementById('top-profile-login-btn');
-      if (btn) {
-        btn.addEventListener('click', () => {
-          openAuthModal();
-        });
+      if (bottomNavAccount) {
+        bottomNavAccount.href = 'https://hscstack.site/login';
+      }
+      if (bottomNavIcon) {
+        bottomNavIcon.textContent = 'login';
+      }
+      if (bottomNavLabel) {
+        bottomNavLabel.textContent = 'Login';
+      }
+      if (drawerAccountLink) {
+        drawerAccountLink.href = 'https://hscstack.site/login';
+      }
+      if (drawerAccountLabel) {
+        drawerAccountLabel.textContent = 'Login';
+      }
+
+      if (container) {
+        container.innerHTML = `
+          <button
+            type="button"
+            id="top-profile-login-btn"
+            class="inline-flex items-center gap-1.5 rounded-xl bg-slate-900 px-3.5 py-1.5 text-xs font-bold text-white shadow-xs transition-all hover:bg-slate-800 hover:shadow-md active:scale-95"
+          >
+            <span class="material-symbols-rounded text-white text-[16px]">login</span>
+            <span>Login</span>
+          </button>
+        `;
+        const btn = document.getElementById('top-profile-login-btn');
+        if (btn) {
+          btn.addEventListener('click', () => {
+            openAuthModal();
+          });
+        }
       }
       return;
     }
@@ -576,81 +623,99 @@ document.addEventListener('DOMContentLoaded', () => {
       : 'https://hscstack.site/profile';
     const initial = name.trim().charAt(0).toUpperCase() || 'U';
 
+    if (bottomNavAccount) {
+      bottomNavAccount.href = profileUrl;
+    }
+    if (bottomNavIcon) {
+      bottomNavIcon.textContent = 'account_circle';
+    }
+    if (bottomNavLabel) {
+      bottomNavLabel.textContent = 'Account';
+    }
+    if (drawerAccountLink) {
+      drawerAccountLink.href = profileUrl;
+    }
+    if (drawerAccountLabel) {
+      drawerAccountLabel.textContent = 'Account Profile';
+    }
+
     const avatarHtml = imageUrl
       ? `<img src="${imageUrl}" alt="${name}" class="h-7 w-7 rounded-full object-cover ring-1 ring-slate-200" onerror="this.outerHTML='<span class=\\'flex h-7 w-7 items-center justify-center rounded-full bg-indigo-600 text-[11px] font-black text-white\\'>${initial}</span>'" />`
       : `<span class="flex h-7 w-7 items-center justify-center rounded-full bg-indigo-600 text-[11px] font-black text-white">${initial}</span>`;
 
-    container.innerHTML = `
-      <div class="relative" id="profile-widget-root">
-        <button
-          type="button"
-          id="profile-card-toggle"
-          class="flex items-center gap-2.5 rounded-full border border-slate-200/90 bg-white py-1 pr-3 pl-1 shadow-2xs transition-all hover:border-slate-300 hover:bg-slate-50 active:scale-98"
-        >
-          ${avatarHtml}
-          <span class="max-w-[130px] truncate text-xs font-bold text-slate-800 hidden sm:inline-block">
-            ${name}
-          </span>
-          <svg class="h-3.5 w-3.5 text-slate-400 transition-transform duration-200" id="profile-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button>
-
-        <div
-          id="profile-dropdown-menu"
-          class="hidden absolute right-0 mt-2 w-56 origin-top-right rounded-2xl border border-slate-200 bg-white p-1.5 shadow-2xl text-left z-50 transition-all duration-150"
-        >
-          <!-- User Identity Card -->
-          <div class="border-b border-slate-100 p-2.5">
-            <p class="truncate text-xs font-bold text-slate-900">
+    if (container) {
+      container.innerHTML = `
+        <div class="relative" id="profile-widget-root">
+          <button
+            type="button"
+            id="profile-card-toggle"
+            class="flex items-center gap-2.5 rounded-full border border-slate-200/90 bg-white py-1 pr-3 pl-1 shadow-2xs transition-all hover:border-slate-300 hover:bg-slate-50 active:scale-98"
+          >
+            ${avatarHtml}
+            <span class="max-w-[130px] truncate text-xs font-bold text-slate-800 hidden sm:inline-block">
               ${name}
-            </p>
-            <p class="truncate text-[11px] font-medium text-slate-400">
-              ${email}
-            </p>
-          </div>
+            </span>
+            <svg class="h-3.5 w-3.5 text-slate-400 transition-transform duration-200" id="profile-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
 
-          <div class="py-1">
-            <a
-              href="${profileUrl}"
-              target="_blank"
-              class="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900"
-            >
-              <svg class="h-3.5 w-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-              <span>Profile</span>
-            </a>
+          <div
+            id="profile-dropdown-menu"
+            class="hidden absolute right-0 mt-2 w-56 origin-top-right rounded-2xl border border-slate-200 bg-white p-1.5 shadow-2xl text-left z-50 transition-all duration-150"
+          >
+            <!-- User Identity Card -->
+            <div class="border-b border-slate-100 p-2.5">
+              <p class="truncate text-xs font-bold text-slate-900">
+                ${name}
+              </p>
+              <p class="truncate text-[11px] font-medium text-slate-400">
+                ${email}
+              </p>
+            </div>
+
+            <div class="py-1">
+              <a
+                href="${profileUrl}"
+                target="_blank"
+                class="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900"
+              >
+                <svg class="h-3.5 w-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Profile</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    `;
+      `;
 
-    const toggle = document.getElementById('profile-card-toggle');
-    const menu = document.getElementById('profile-dropdown-menu');
-    const chevron = document.getElementById('profile-card-chevron');
+      const toggle = document.getElementById('profile-card-toggle');
+      const menu = document.getElementById('profile-dropdown-menu');
+      const chevron = document.getElementById('profile-card-chevron');
 
-    if (toggle && menu) {
-      toggle.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const isOpen = !menu.classList.contains('hidden');
-        if (isOpen) {
-          menu.classList.add('hidden');
-          if (chevron) chevron.classList.remove('rotate-180');
-        } else {
-          menu.classList.remove('hidden');
-          if (chevron) chevron.classList.add('rotate-180');
-        }
-      });
+      if (toggle && menu) {
+        toggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = !menu.classList.contains('hidden');
+          if (isOpen) {
+            menu.classList.add('hidden');
+            if (chevron) chevron.classList.remove('rotate-180');
+          } else {
+            menu.classList.remove('hidden');
+            if (chevron) chevron.classList.add('rotate-180');
+          }
+        });
 
-      document.addEventListener('click', (e) => {
-        const root = document.getElementById('profile-widget-root');
-        if (root && !root.contains(e.target)) {
-          menu.classList.add('hidden');
-          if (chevron) chevron.classList.remove('rotate-180');
-        }
-      });
+        document.addEventListener('click', (e) => {
+          const root = document.getElementById('profile-widget-root');
+          if (root && !root.contains(e.target)) {
+            menu.classList.add('hidden');
+            if (chevron) chevron.classList.remove('rotate-180');
+          }
+        });
+      }
     }
   }
 
@@ -1424,6 +1489,30 @@ document.addEventListener('DOMContentLoaded', () => {
     
     setTimeout(() => {
       welcomeModal.classList.add('hidden');
+    }, 300);
+  }
+
+  function openMobileDrawer() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.remove('opacity-0');
+      if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.add('opacity-100');
+      if (mobileDrawerPanel) mobileDrawerPanel.classList.remove('-translate-x-full');
+      if (mobileDrawerPanel) mobileDrawerPanel.classList.add('translate-x-0');
+    }, 10);
+  }
+
+  function closeMobileDrawer() {
+    if (!mobileDrawer) return;
+    if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.remove('opacity-100');
+    if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.add('opacity-0');
+    if (mobileDrawerPanel) mobileDrawerPanel.classList.remove('translate-x-0');
+    if (mobileDrawerPanel) mobileDrawerPanel.classList.add('-translate-x-full');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      mobileDrawer.classList.add('hidden');
     }, 300);
   }
 
